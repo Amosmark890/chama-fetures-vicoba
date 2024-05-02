@@ -1,0 +1,6 @@
+server:
+  port: ${NOTIFICATIONS_PORT}
+
+spring:
+  profiles:
+    active: vicoba

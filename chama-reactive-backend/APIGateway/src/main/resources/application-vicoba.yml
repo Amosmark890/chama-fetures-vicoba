@@ -1,0 +1,52 @@
+server:
+  port: ${GATEWAY_PORT}
+  ssl:
+    enabled: true
+    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+    key-store: ${SSL_KEYSTORE}
+    key-store-type: ${SSL_KEYSTORE_TYPE}
+
+management:
+  endpoint:
+    health:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+spring:
+  application:
+    name: chama-gateway
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+
+ip:
+  whitelist: ${IP_WHITELIST}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_IP_ADDRESS}
+    register-with-eureka: false
+    fetch-registry: true
+  instance:
+    hostname: ${HOST_NAME}
+    prefer-ip-address: true
+
+auth:
+  server:
+    url: ${AUTH_SERVER_URL}
+    basic: ${AUTH_SERVER_BASIC_CREDENTIALS}
+
+ecl:
+  util:
+    mask:
+      - password:all
+      - phoneNumber:mid:5
+      - 2:mid:5
+      - 102:mid:5
+      - 103:mid:5
+      - 25:all

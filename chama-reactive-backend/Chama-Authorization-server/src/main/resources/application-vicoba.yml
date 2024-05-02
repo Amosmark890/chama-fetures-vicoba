@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+
+  jpa:
+    hibernate:
+        ddl-auto: update
+    properties:
+      dialect: ${DB_DIALECT}
+
+  application:
+    name: chama-authServer
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: true
+          brokers: ${KAFKA_URL}
+
+security:
+  oauth2:
+    client:
+      client-id: chama_clientid
+      client-secret: Y2hhbWFzZWNyZXQ=
+
+logging:
+  file:
+    name: chama-authorization-logs
+    path: logs
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_IP_ADDRESS}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: ${HOST_NAME}
+    prefer-ip-address: true
+
+app:
+  security:
+    keystore-name: ${KEYSTORE_NAME}
+    keystore-password: ${KEYSTORE_PASS}
+    key-alias: ${KEYSTORE_ALIAS}

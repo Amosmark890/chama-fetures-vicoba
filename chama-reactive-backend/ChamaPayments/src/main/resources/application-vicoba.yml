@@ -1,0 +1,115 @@
+file:
+  server:
+    host: ${GATEWAY_URL}
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  #Flyway
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+    schemas: public
+
+  application:
+    name: chama-payments
+
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: ${DB_DIALECT}
+
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+
+  servlet:
+    multipart:
+      max-file-size: 10000KB
+      max-request-size: 10000KB
+
+  cloud:
+    function:
+      definition: createMemberWallet;createGroupContribution;createGroupAccount;enableGroupContributions;disableGroupContributions;editContributionName;fundsTransferCallback
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.20.66:9092
+          auto-create-topics: true
+      bindings:
+        createMemberWallet-in-0:
+          group: create-member-wallet-group
+        createGroupContribution-in-0:
+          group: create-group-contribution-group
+        createGroupAccount-in-0:
+          group: create-group-account-group
+        enableGroupContributions-in-0:
+          group: enableGroupContributions-group
+        disableGroupContributions-in-0:
+          group: disable-group-contributions-group
+        editContributionName-in-0:
+          destination: contribution-name-edit-topic
+          group: contribution-name-edit-group
+        fundsTransferCallback-in-0:
+          destination: callback-topic
+          group: callback-topic-group
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+app-configs:
+  online-checkout: https://testgateway.ekenya.co.ke:8443/ServiceLayer/onlinecheckout/request
+  b2c-url: https://testgateway.ekenya.co.ke:8443/ServiceLayer/request/postRequest
+  online-query: https://testgateway.ekenya.co.ke:8443/ServiceLayer/onlinecheckout/query
+  b2c-online-query: https://testgateway.ekenya.co.ke:8443/ServiceLayer/transaction/query
+  esb-url: http://10.20.2.12:8082/api/EsbPublicService
+  pg-client-username: chama
+  pg-client-id: 5141
+  pg-service-id: 5067
+  pg-service-b2c-id: 6125
+  pg-client-name: ECLECTICS
+  pg-client-password: 3b9b2656eba1b600277c11b8ec7bd692a574f1f4d888e444bc138647458f70f74fab69132498d2074980d4575bbf54ac608aa9df0dba110c834511c218647657
+
+wallet:
+  gl_account_number: TA2458649000001
+  gl_phonenumber: 783490023
+
+logging:
+  file:
+    name: logs/application.log
+  level:
+    org.apache: OFF
+    kafka: OFF
+
+app:
+  security:
+    jwt:
+      keystore-name: ${KEYSTORE_NAME}
+      keystore-password: ${KEYSTORE_PASS}
+      key-alias: ${KEYSTORE_ALIAS}
+
+vicoba:
+  url: ${DCB_ESB}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_IP_ADDRESS}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: ${HOST_NAME}
+    prefer-ip-address: true

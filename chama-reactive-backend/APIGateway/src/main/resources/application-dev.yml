@@ -1,0 +1,66 @@
+server:
+  port: 8200
+#  ssl:
+#    enabled: true
+#    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+#    key-store: ${SSL_KEYSTORE}
+#    key-store-type: ${SSL_KEYSTORE_TYPE}
+
+
+#    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+#    key-store: ${SSL_KEYST ORE}
+#    key-store-type: ${SSL_KEYSTORE_TYPE}
+
+management:
+  endpoint:
+    health:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+spring:
+  application:
+    name: chama-gateway
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: true
+          brokers: 192.168.20.32:9092
+
+ip:
+  whitelist: http://localhost
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://192.168.20.32:8761/eureka}
+    register-with-eureka: false
+    fetch-registry: true
+  instance:
+    hostname: localhost
+
+auth:
+  server:
+    url: http://192.168.20.32:8200/
+    basic: Basic Y2hhbWFfY2xpZW50aWQ6WTJoaGJXRnpaV055WlhRPQ==
+
+ecl:
+  util:
+    mask:
+      - password:all
+      - phoneNumber:mid:5
+      - phonenumber:mid:5
+      - imsi:mid:5
+      - access_token:all
+      - refresh_token:all
+      - identification:start:5
+      - walletbalance:all
+      - 2:mid:5
+      - 25:all
+      - 102:mid:5
+      - 103:mid:5

@@ -1,0 +1,19 @@
+server:
+  port: ${EUREKA_PORT}
+#  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: ${HOST_NAME}
+#    hostname: localhost
+    prefer-ip-address: true
+
+logging:
+  level:
+    com:
+      netflix:
+         eureka : OFF
+         discovery: OFF

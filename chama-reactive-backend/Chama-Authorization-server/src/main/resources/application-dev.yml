@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    username: backend
+    password: Vicoba.22
+    url: jdbc:postgresql://192.168.20.41:5432/chamadb2
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL81Dialect
+
+  application:
+    name: chama-authServer
+
+security:
+  oauth2:
+    client:
+      client-id: chama_clientid
+      client-secret: Y2hhbWFzZWNyZXQ=
+
+server:
+  port: 8772
+
+logging:
+  file:
+    name: chama-authorization-logs
+    path: logs
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.20.2.12:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+
+app:
+  security:
+    keystore-name: authorization.p12
+    keystore-password: RSwr$%@8L?
+    key-alias: eclectics-auth

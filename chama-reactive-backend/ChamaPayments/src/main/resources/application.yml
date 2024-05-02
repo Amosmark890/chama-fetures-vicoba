@@ -1,0 +1,9 @@
+server:
+#  port: ${PAYMENTS_PORT}
+  port: 8090
+
+spring:
+  profiles:
+#    active: vicoba
+    active: prod
+#    active: dev

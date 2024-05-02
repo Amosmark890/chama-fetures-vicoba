@@ -1,0 +1,8 @@
+server:
+#  port: ${POLLS_PORT}
+  port: 8091
+
+spring:
+  profiles:
+#    active: vicoba
+    active: dev

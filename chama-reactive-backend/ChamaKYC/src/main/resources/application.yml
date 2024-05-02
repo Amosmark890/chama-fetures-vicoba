@@ -1,0 +1,26 @@
+server:
+  port: 8083
+#  port: ${KYC_PORT}
+
+spring:
+  profiles:
+    active: vicoba
+#    active: prod
+#    active: dev
+  flyway:
+    enabled: false
+    validate-on-migrate: true
+    baseline-on-migrate: true
+  servlet:
+    multipart:
+      max-file-size: 10000KB
+      max-request-size: 10000KB
+
+logging:
+  file:
+    name: logs/application.log
+
+jdbc:
+  connection:
+    pool:
+      size: 32

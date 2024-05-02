@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  tasks:
+    - name: start new version of container
+      ansible.builtin.shell: |
+        docker-compose --env-file .env.dev up --detach --build
+      args:
+        chdir: ./vicoba-microservices/

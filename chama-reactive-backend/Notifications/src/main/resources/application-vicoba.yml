@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: chama-notifications
+
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: ${DB_DIALECT}
+
+  cloud:
+    function:
+      definition: sendText;sendVicobaText;sendEmail
+    stream:
+      kafka:
+        binder:
+          brokers: ${KAFKA_URL}
+          auto-create-topics: true
+      bindings:
+        sendText-in-0:
+          group: send-text-group
+        sendVicobaText-in-0:
+          group: send-vicoba-text-group
+        sendEmail-in-0:
+          group: send-email-group
+  mail:
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: false
+          starttls:
+            enable: true
+            required: true
+    protocol: smtp
+
+app-configs:
+  sms-url: https://testgateway.ekenya.co.ke:8443/ServiceLayer/pgsms/send
+  pg-client-username: chama
+  pg-client-id: 5141
+  pg-client-name: ECLECTICS
+  pg-client-password: 3b9b2656eba1b600277c11b8ec7bd692a574f1f4d888e444bc138647458f70f74fab69132498d2074980d4575bbf54ac608aa9df0dba110c834511c218647657
+
+email:
+  send-from: ${EMAIL_SEND_FROM}
+
+vicoba:
+  sms: ${DCB_SMS_GATEWAY}

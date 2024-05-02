@@ -1,0 +1,149 @@
+file:
+  server:
+    host: http://192.168.20.32:8200
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  #Flyway
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+    schemas: public
+
+  application:
+    name: chama-payments
+
+  datasource:
+    username: vicoba
+    password: "@Abvj.29221"
+    url: jdbc:postgresql://192.168.20.31:5432/chamadb
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL94Dialect
+
+  redis:
+    host: 192.168.20.32
+    port: 6379
+
+    servlet:
+      multipart:
+        max-file-size: 10000KB
+        max-request-size: 10000KB
+
+    security:
+      oauth2:
+        resourceserver:
+          jwt:
+            issuer-uri: http://localhost:8772
+
+  cloud:
+    function:
+      definition: createMemberWallet;createGroupContribution;createGroupAccount;enableGroupContributions;disableGroupContributions;editContributionName;fundsTransferCallback
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.20.32:9092
+          auto-create-topics: true
+      bindings:
+        createMemberWallet-in-0:
+          group: create-member-wallet-group
+        createGroupContribution-in-0:
+          group: create-group-contribution-group
+        createGroupAccount-in-0:
+          group: create-group-account-group
+        enableGroupContributions-in-0:
+          group: enableGroupContributions-group
+        disableGroupContributions-in-0:
+          group: disable-group-contributions-group
+        editContributionName-in-0:
+          destination: contribution-name-edit-topic
+          group: contribution-name-edit-group
+        fundsTransferCallback-in-0:
+          destination: callback-topic
+          group: callback-topic-group
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+app-configs:
+  app-signature: cGQNrYD7Sl5
+  online-checkout: https://testgateway.ekenya.co.ke:8443/ServiceLayer/onlinecheckout/request
+  sms-url: https://testgateway.ekenya.co.ke:8443/ServiceLayer/pgsms/send
+  b2c-url: https://testgateway.ekenya.co.ke:8443/ServiceLayer/request/postRequest
+  online-query: https://testgateway.ekenya.co.ke:8443/ServiceLayer/onlinecheckout/query
+  b2c-online-query: https://testgateway.ekenya.co.ke:8443/ServiceLayer/transaction/query
+  countries-directory: configs/country-codes.json
+  regions-directory: configs/senegal-regions.json
+  nationality-directory: configs/nationality.json
+  jwt-name: chamajwtsec
+  sms-url-dev: https://testgateway.ekenya.co.ke:8443/ServiceLayer/pgsms/send
+  sms-url-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/pgsms/send
+  online-checkout-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/onlinecheckout/request
+  online-query-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/onlinecheckout/query
+  b2c-url-dev: https://testgateway.ekenya.co.ke:8443/ServiceLayer/request/postRequest
+  b2c-url-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/request/postRequest
+  b2c-url-query-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/transaction/query
+  esb-url: http://10.20.2.12:8082/api/EsbPublicService
+  AccountsConfig-directory: configs/AccountsConfig.json
+  walletServicesWrapper-directory: configs/walletServicesWrapper.json
+  sms-from: FEPGROUP
+  pg-client-username: chama
+  pg-client-id: 5141
+  pg-service-id: 5067
+  pg-service-b2c-id: 6125
+  pg-client-name: ECLECTICS
+  pg-client-password: 3b9b2656eba1b600277c11b8ec7bd692a574f1f4d888e444bc138647458f70f74fab69132498d2074980d4575bbf54ac608aa9df0dba110c834511c218647657
+
+payments:
+  pg_username: chama
+  pg_password: 3b9b2656eba1b600277c11b8ec7bd692a574f1f4d888e444bc138647458f70f74fab69132498d2074980d4575bbf54ac608aa9df0dba110c834511c218647657
+  pg_client_id: 5141
+  pg_service_id: 5067
+
+
+wallet:
+  gl_account_number: TA2458649000001
+  gl_phonenumber: 783490023
+
+logging:
+  file:
+    name: logs/application.log
+  level:
+    org.apache: OFF
+    kafka: OFF
+
+app:
+  security:
+    jwt:
+      keystore-name: authorization.p12
+      keystore-password: RSwr$%@8L?
+      key-alias: eclectics-auth
+
+vicoba:
+  url: http://192.168.20.135:8080/dcb/vicoba
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.20.32:8761/eureka
+    register-with-eureka: false
+    fetch-registry: true
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+
+encrypt:
+  body:
+    aes-key: 12345678 # for testing purposes only! A stronger password should be used

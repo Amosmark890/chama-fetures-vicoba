@@ -1,0 +1,45 @@
+image: docker:20.10.21
+stages:
+  - prebuild
+  - build
+  - deploy
+
+createAPIGatewayPreBuild:
+  stage: prebuild
+  image: docker:20.10.21
+  script:
+    - docker build ./chama-reactive-backend/APIGateway -f ./chama-reactive-backend/APIGateway/builder.Dockerfile -t api-gateway-builder
+  only:
+    changes:
+      - chama-reactive-backend/APIGateway/*.xml
+
+createEurekaPreBuild:
+  stage: prebuild
+  image: docker:20.10.21
+  script:
+    - docker build ./chama-reactive-backend/Chama-Eureka-server -f ./chama-reactive-backend/APIGateway/builder.Dockerfile -t eureka-server-builder
+  only:
+    changes:
+      - chama-reactive-backend/Chama-Eureka-server/*.xml
+
+buildAPIGatewayContainer:
+  stage: build
+  image: docker:20.10.21
+  script:
+    - docker build ./chama-reactive-backend/APIGateway -t vicoba-api-gateway
+
+buildEurekaServerContainer:
+  stage: build
+  image: docker:20.10.21
+  script:
+    - docker build ./chama-reactive-backend/Chama-Eureka-server -t vicoba-eureka-server
+
+deployUpdatedBuild:
+  stage: deploy
+  image: ansible-client:latest
+  script:
+    - ansible --version
+    - ansible-playbook --version
+    - export ANSIBLE_HOST_KEY_CHECKING=False
+    - eval "$(ssh-agent -s)"
+    - ansible-playbook deploy.yml -i 192.168.20.66, -u backend

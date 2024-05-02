@@ -1,0 +1,87 @@
+spring:
+  application:
+    name: chama-notifications
+
+  datasource:
+    username: backend
+    password: Vicoba.22
+    url: jdbc:postgresql://10.20.2.12:5433/chamadb
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL81Dialect
+
+  cloud:
+    function:
+      definition: sendText;sendVicobaText;sendEmail
+    stream:
+      kafka:
+        binder:
+          brokers: 10.20.2.12:9092
+          auto-create-topics: true
+      bindings:
+        sendText-in-0:
+          group: send-text-group
+        sendVicobaText-in-0:
+          group: vicoba-text-group
+        sendEmail-in-0:
+          group: send-email-group
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: chama@eclectics.io
+    password: gyRpBN.E8;q3b%xw
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          starttls:
+            enable: false
+            required: true
+    protocol: smtps
+
+app-configs:
+  app-signature: cGQNrYD7Sl5
+  online-checkout: https://testgateway.ekenya.co.ke:8443/ServiceLayer/onlinecheckout/request
+  sms-url: https://testgateway.ekenya.co.ke:8443/ServiceLayer/pgsms/send
+  b2c-url: https://testgateway.ekenya.co.ke:8443/ServiceLayer/request/postRequest
+  online-query: https://testgateway.ekenya.co.ke:8443/ServiceLayer/onlinecheckout/query
+  b2c-online-query: https://testgateway.ekenya.co.ke:8443/ServiceLayer/transaction/query
+  countries-directory: configs/country-codes.json
+  regions-directory: configs/senegal-regions.json
+  nationality-directory: configs/nationality.json
+  jwt-name: chamajwtsec
+  sms-url-dev: https://testgateway.ekenya.co.ke:8443/ServiceLayer/pgsms/send
+  sms-url-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/pgsms/send
+  online-checkout-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/onlinecheckout/request
+  online-query-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/onlinecheckout/query
+  b2c-url-dev: https://testgateway.ekenya.co.ke:8443/ServiceLayer/request/postRequest
+  b2c-url-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/request/postRequest
+  b2c-url-query-prod: https://eclecticsgateway.ekenya.co.ke:8095/ServiceLayer/transaction/query
+  esb-url: http://10.20.2.12:8082/api/EsbPublicService
+  AccountsConfig-directory: configs/AccountsConfig.json
+  walletServicesWrapper-directory: configs/walletServicesWrapper.json
+  sms-from: FEPGROUP
+  pg-client-username: chama
+  pg-client-id: 5141
+  pg-service-id: 5067
+  pg-service-b2c-id: 6125
+  pg-client-name: ECLECTICS
+  pg-client-password: 3b9b2656eba1b600277c11b8ec7bd692a574f1f4d888e444bc138647458f70f74fab69132498d2074980d4575bbf54ac608aa9df0dba110c834511c218647657
+
+payments:
+  pg_username: chama
+  pg_password: 3b9b2656eba1b600277c11b8ec7bd692a574f1f4d888e444bc138647458f70f74fab69132498d2074980d4575bbf54ac608aa9df0dba110c834511c218647657
+  pg_client_id: 5141
+  pg_service_id: 5067
+
+email:
+  send-from: info@chama24.co.ke
+
+vicoba:
+  sms: http://192.168.20.135:8080/

@@ -1,0 +1,113 @@
+jdbc:
+  pool:
+    size: 32
+
+#server:
+#  port: 8083
+
+file:
+  server:
+    host: 192.168.20.66:8200
+
+kafka:
+  bootstrap-Address: 192.168.20.66:9092
+
+spring:
+  application:
+    name: chama-kyc
+
+#  datasource:
+#    username: backend
+#    password: Vicoba.22
+#    url: jdbc:postgresql://192.168.20.41:5432/chamadb
+  datasource:
+    password: Vicoba.22
+    url: jdbc:postgresql://192.168.20.41:5432/chamadb2
+    username: backend
+
+  #Flyway
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+    schemas: public
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL81Dialect
+
+  redis:
+    host: 192.168.20.66
+    port: 6379
+
+  servlet:
+    multipart:
+      max-file-size: 10000KB
+      max-request-size: 10000KB
+
+  security:
+    oauth2:
+      client:
+        provider: spring
+        registration:
+          client-id: chama_clientid
+          client-secret: Y2hhbWFzZWNyZXQ=
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: true
+          brokers: 192.168.20.66:9092
+      bindings:
+        pollWinner-in-0:
+          group: pollWinner-in-group
+        disableMember-in-0:
+          group: disable-member-group
+          destination: deactivate-member-account-topic
+    function:
+      definition: pollWinner;disableMember
+
+logging:
+  level:
+    org.apache: OFF
+    kafka: OFF
+
+base:
+  services-url: http://192.168.20.66:8200
+
+app:
+  security:
+    jwt:
+      keystore-name: authorization.p12
+      keystore-password: RSwr$%@8L?
+      key-alias: eclectics-auth
+
+vicoba:
+  url: http://192.168.20.88:8080/dcb/vicoba
+  portal: http://192.168.20.42:8000/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.20.66:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+
+auth:
+  server:
+    url: http://192.168.20.66:8200/
+    basic: Basic Y2hhbWFfY2xpZW50aWQ6WTJoaGJXRnpaV055WlhRPQ==
+
+
+ecl:
+  util:
+    mask:
+      - 2:mid:5
+      - 25:all
+      - 102:mid:5
+      - 103:mid:5

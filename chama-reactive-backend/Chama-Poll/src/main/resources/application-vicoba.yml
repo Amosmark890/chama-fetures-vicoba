@@ -1,0 +1,63 @@
+spring:
+  application:
+    name: chama-polls
+
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: ${DB_DIALECT}
+
+    servlet:
+      multipart:
+        max-file-size: 10000KB
+        max-request-size: 10000KB
+
+    security:
+      oauth2:
+        resourceserver:
+          jwt:
+            issuer-uri: http://localhost:8772
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: ${KAFKA_URL}
+          auto-create-topics: true
+
+logging:
+  file:
+    name: logs/application.log
+  level:
+    org.apache: OFF
+    kafka: OFF
+
+app:
+  security:
+    jwt:
+      keystore-name: ${KEYSTORE_NAME}
+      keystore-password: ${KEYSTORE_PASS}
+      key-alias: ${KEYSTORE_ALIAS}
+
+vicoba:
+  url: http://192.168.20.88:8080/dcb/vicoba
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_IP_ADDRESS}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: ${HOST_NAME}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chamaAuthServer" />
+        <module name="Commons" />
+        <module name="Chama-Eureka-server" />
+        <module name="ChamaPayments" />
+        <module name="Chama-Poll" />
+        <module name="APIGateway" />
+        <module name="ChamaKYC" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APIGateway" target="11" />
+      <module name="Chama-Eureka-server" target="11" />
+      <module name="Chama-Poll" target="11" />
+      <module name="chama-reactive-backend" target="11" />
+      <module name="chamaAuthServer" target="11" />
+      <module name="ChamaKYC" target="11" />
+      <module name="ChamaPayments" target="11" />
+      <module name="Commons" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGateway" options="-parameters" />
+      <module name="Chama-Eureka-server" options="-parameters" />
+      <module name="Chama-Poll" options="-parameters" />
+      <module name="ChamaKYC" options="-parameters" />
+      <module name="ChamaPayments" options="-parameters" />
+      <module name="Commons" options="-parameters" />
+      <module name="chamaAuthServer" options="-parameters" />
+    </option>
+  </component>
+</project>

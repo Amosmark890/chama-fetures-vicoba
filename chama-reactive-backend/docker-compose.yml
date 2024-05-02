@@ -1,0 +1,168 @@
+version: "3"
+
+services:
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8200:8200"
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - GATEWAY_PORT
+      - EUREKA_IP_ADDRESS
+      - HOST_NAME
+      - AUTH_SERVER_BASIC_CREDENTIALS
+      - IP_WHITELIST
+    depends_on:
+      - eureka
+      - auth-server
+      - kyc
+      - payments
+      - polls
+    restart: always
+
+  eureka:
+    environment:
+      - EUREKA_PORT
+      - HOST_NAME
+    build: ./eureka
+    ports: 
+      - "8761:8761"
+    volumes:
+      - ./logs:/app/logs
+    restart: always
+
+  auth-server:
+    environment:
+      - AUTH_PORT
+      - KEYSTORE_ALIAS
+      - KEYSTORE_PASS
+      - KEYSTORE_NAME
+      - EUREKA_IP_ADDRESS
+      - HOST_NAME
+      - RDBC_URL
+      - DB_DIALECT
+      - DB_URL
+      - DB_PASSWORD
+      - DB_USERNAME
+      - KAFKA_URL
+      - REDIS_PORT
+      - REDIS_HOST
+    build: ./auth-server
+    ports:
+      - "8772:8772"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - eureka      
+    restart: always
+
+  kyc:
+    environment:
+      - KYC_PORT
+      - HOST_NAME
+      - EUREKA_IP_ADDRESS
+      - DCB_ESB
+      - KEYSTORE_ALIAS
+      - KEYSTORE_PASS
+      - KEYSTORE_NAME
+      - KAFKA_URL
+      - REDIS_PORT
+      - REDIS_HOST
+      - DB_DIALECT
+      - DB_URL
+      - DB_PASSWORD
+      - DB_USERNAME
+      - GATEWAY_URL
+      - VICOBA_PORTAL
+      - AUTH_SERVER_BASIC_CREDENTIALS
+    build: ./kyc
+    ports:
+      - "8083:8083"
+    volumes: 
+      - ./chama_files:/app/chama_files
+      - ./logs:/app/logs
+    depends_on:
+      - eureka
+      - auth-server
+    restart: always
+
+  payments:
+    environment:
+      - PAYMENTS_PORT
+      - HOST_NAME
+      - EUREKA_IP_ADDRESS
+      - DCB_ESB
+      - KEYSTORE_ALIAS
+      - KEYSTORE_PASS
+      - KEYSTORE_NAME
+      - KAFKA_URL
+      - REDIS_PORT
+      - REDIS_HOST
+      - DB_DIALECT
+      - DB_URL
+      - DB_PASSWORD
+      - DB_USERNAME
+      - GATEWAY_URL
+      - AUTH_SERVER_BASIC_CREDENTIALS
+    build: ./payments
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./chama_files:/app/chama_files 
+      - ./logs:/app/logs
+    depends_on:
+      - eureka
+      - auth-server
+    restart: always
+
+  notifications:
+    environment:
+      - DCB_SMS_GATEWAY
+      - EMAIL_SEND_FROM
+      - MAIL_PASSWORD
+      - MAIL_USERNAME
+      - MAIL_PORT
+      - MAIL_HOST
+      - KAFKA_URL
+      - DB_DIALECT
+      - DB_URL
+      - DB_PASSWORD
+      - DB_USERNAME
+      - NOTIFICATIONS_PORT
+    build: ./notifications
+    ports:
+      - "8084:8084"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - eureka
+      - auth-server
+    restart: always
+
+  polls:
+    environment:
+      - POLLS_PORT
+      - HOST_NAME
+      - EUREKA_IP_ADDRESS
+      - DCB_ESB
+      - KEYSTORE_ALIAS
+      - KEYSTORE_PASS
+      - KEYSTORE_NAME
+      - KAFKA_URL
+      - REDIS_PORT
+      - REDIS_HOST
+      - DB_DIALECT
+      - DB_URL
+      - DB_PASSWORD
+      - DB_USERNAME
+      - GATEWAY_URL
+    build: ./polls
+    ports:
+      - "8778:8778"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - eureka
+      - auth-server
+    restart: always

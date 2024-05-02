@@ -1,0 +1,104 @@
+server:
+  #  port: 8083
+  port: ${KYC_PORT}
+jdbc:
+  pool:
+    size: 32
+
+file:
+  server:
+    host: ${GATEWAY_URL}
+
+spring:
+  application:
+    name: chama-kyc
+
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+
+  #Flyway
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+    schemas: public
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: ${DB_DIALECT}
+
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+
+  servlet:
+    multipart:
+      max-file-size: 10000KB
+      max-request-size: 10000KB
+
+  security:
+    oauth2:
+      client:
+        registration:
+          client-id: chama_clientid
+          client-secret: Y2hhbWFzZWNyZXQ=
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: true
+          brokers: ${KAFKA_URL}
+      bindings:
+        pollWinner-in-0:
+          group: pollWinner-in-group
+        disableMember-in-0:
+          group: disable-member-group
+          destination: deactivate-member-account-topic
+    function:
+      definition: pollWinner;disableMember
+
+logging:
+  level:
+    org.apache: OFF
+    kafka: OFF
+
+base:
+  services-url: ${GATEWAY_URL}
+
+app:
+  security:
+    jwt:
+      keystore-name: ${KEYSTORE_NAME}
+      keystore-password: ${KEYSTORE_PASS}
+      key-alias: ${KEYSTORE_ALIAS}
+
+vicoba:
+  url: ${DCB_ESB}
+  portal: ${VICOBA_PORTAL}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_IP_ADDRESS}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: ${HOST_NAME}
+    prefer-ip-address: true
+
+auth:
+  server:
+    url: ${AUTH_SERVER_URL}
+    basic: ${AUTH_SERVER_BASIC_CREDENTIALS}
+
+ecl:
+  util:
+    mask:
+      - 2:mid:5
+      - 25:all
+      - 102:mid:5
+      - 103:mid:5
