@@ -2,10 +2,15 @@ spring:
   application:
     name: chama-notifications
 
-  datasource:
-    username: backend
-    password: Vicoba.22
-    url: jdbc:postgresql://10.20.2.12:5433/chamadb
+#  datasource:
+#    username: backend
+#    password: Vicoba.22
+#    url: jdbc:postgresql://10.20.2.12:5433/chamadb
+
+    datasource:
+      password: Amosmark
+      url: jdbc:postgresql://localhost:5432/chamadb
+      username: postgres
 
   jpa:
     hibernate:
