@@ -6,14 +6,16 @@ spring:
   application:
     name: chama-polls
 
-  datasource:
-    username: backend
-    password: Vicoba.22
-    url: jdbc:postgresql://192.168.20.41:5432/chamadb2
 #  datasource:
-#    password: Makuba33159718
-#    url: jdbc:postgresql://localhost:5432/chamadb
-#    username: postgres
+#    username: backend
+#    password: Vicoba.22
+#    url: jdbc:postgresql://192.168.20.41:5432/chamadb2
+
+
+  datasource:
+    password: Amosmark
+    url: jdbc:postgresql://localhost:5432/chamadb
+    username: postgres
 
   jpa:
     hibernate:

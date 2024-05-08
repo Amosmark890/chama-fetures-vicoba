@@ -21,9 +21,9 @@ spring:
 #    password: Vicoba.22
 #    url: jdbc:postgresql://192.168.20.41:5432/chamadb
   datasource:
-    password: Vicoba.22
+    password: Amosmark
     url: jdbc:postgresql://192.168.20.41:5432/chamadb2
-    username: backend
+    username: postgres
 
   #Flyway
   flyway:
