@@ -1,4 +1,4 @@
-FROM api-gateway-builder:latest as builder
+FROM apigateway as builder
 WORKDIR /app
 COPY . .
 RUN mvn package -Dmaven.test.skip=true

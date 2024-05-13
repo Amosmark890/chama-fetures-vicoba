@@ -19,6 +19,7 @@
         <hazelcast.version>3.8.2</hazelcast.version>
         <cache-api.version>1.0.0</cache-api.version>
         <dockerfile-maven-version>1.4.13</dockerfile-maven-version>
+
     </properties>
 <!--    <repositories>-->
 <!--        <repository>-->
@@ -120,7 +121,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                
+
                 <configuration>
+
+
+
+
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

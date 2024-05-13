@@ -22,7 +22,7 @@ spring:
 #    url: jdbc:postgresql://192.168.20.41:5432/chamadb
   datasource:
     password: Amosmark
-    url: jdbc:postgresql://192.168.20.41:5432/chamadb2
+    url: jdbc:postgresql://192.168.20.41:5432/chamadb
     username: postgres
 
   #Flyway
