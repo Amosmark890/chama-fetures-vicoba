@@ -1585,3 +1585,149 @@
 2024-05-16 16:12:15.647  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2024-05-16 16:12:38.862  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
 2024-05-16 16:12:44.247  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:13:38.872  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:14:38.885  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:15:03.790  INFO 15524 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:15:38.897  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:16:25.009  INFO 13088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:16:38.069  INFO 13088 --- [boundedElastic-23] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 16:16:38.071  INFO 13088 --- [boundedElastic-23] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 16:16:38.912  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:17:15.669  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:17:38.925  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:17:44.249  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Disabling past polls...
+2024-05-16 16:17:44.268  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:18:38.948  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:19:38.970  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:20:03.804  INFO 15524 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:20:38.998  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:21:25.016  INFO 13088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:21:38.090  INFO 13088 --- [boundedElastic-25] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 16:21:38.094  INFO 13088 --- [boundedElastic-25] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 16:21:39.008  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:22:15.671  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:22:39.018  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:22:44.297  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:23:39.037  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:24:39.048  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:25:03.815  INFO 15524 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:25:39.063  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:26:25.027  INFO 13088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:26:38.201  INFO 13088 --- [boundedElastic-27] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 16:26:38.214  INFO 13088 --- [boundedElastic-27] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 16:26:39.078  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:27:15.676  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:27:39.085  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:27:44.262  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Disabling past polls...
+2024-05-16 16:27:44.309  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:28:39.100  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:29:39.114  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:30:03.817  INFO 15524 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:30:39.127  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:31:25.037  INFO 13088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:31:38.230  INFO 13088 --- [boundedElastic-29] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 16:31:38.232  INFO 13088 --- [boundedElastic-29] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 16:31:39.145  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:32:15.684  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:32:39.164  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:32:44.367  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:33:39.176  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:34:39.186  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:35:03.821  INFO 15524 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:35:39.195  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:36:25.050  INFO 13088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:36:38.241  INFO 13088 --- [boundedElastic-31] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 16:36:38.243  INFO 13088 --- [boundedElastic-31] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 16:36:39.212  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:37:15.702  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:37:39.237  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:37:44.275  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Disabling past polls...
+2024-05-16 16:37:44.390  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:38:39.260  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:39:39.293  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:40:03.825  INFO 15524 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:40:39.311  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:41:25.054  INFO 13088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:41:38.262  INFO 13088 --- [boundedElastic-33] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 16:41:38.264  INFO 13088 --- [boundedElastic-33] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 16:41:39.326  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:42:15.715  INFO 3156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 16:42:39.340  INFO 13088 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 16:42:44.416  INFO 3156 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 16:42:52.207  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CHAMA-PAYMENTS with eureka with status DOWN
+2024-05-16 16:42:52.210  INFO 13088 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1715866972209, current=DOWN, previous=UP]
+2024-05-16 16:42:52.212  INFO 13088 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+2024-05-16 16:42:52.329  INFO 13088 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+2024-05-16 16:42:52.786  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : create-member-wallet-group: partitions revoked: [createMemberWallet-in-0-0]
+2024-05-16 16:42:52.863  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : create-member-wallet-group: Consumer stopped
+2024-05-16 16:42:52.878  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@fa64a09
+2024-05-16 16:42:53.314  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.321  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : create-group-contribution-group: partitions revoked: [createGroupContribution-in-0-0]
+2024-05-16 16:42:53.336  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : create-group-contribution-group: Consumer stopped
+2024-05-16 16:42:53.336  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@415a44d2
+2024-05-16 16:42:53.344  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.349  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : create-group-account-group: partitions revoked: [createGroupAccount-in-0-0]
+2024-05-16 16:42:53.368  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : create-group-account-group: Consumer stopped
+2024-05-16 16:42:53.369  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@63431e7b
+2024-05-16 16:42:53.377  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.382  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : enableGroupContributions-group: partitions revoked: [enableGroupContributions-in-0-0]
+2024-05-16 16:42:53.407  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : enableGroupContributions-group: Consumer stopped
+2024-05-16 16:42:53.408  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@36e92ada
+2024-05-16 16:42:53.425  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.432  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : disable-group-contributions-group: partitions revoked: [disableGroupContributions-in-0-0]
+2024-05-16 16:42:53.443  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : disable-group-contributions-group: Consumer stopped
+2024-05-16 16:42:53.444  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@6b94d410
+2024-05-16 16:42:53.452  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.455  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : contribution-name-edit-group: partitions revoked: [contribution-name-edit-topic-0]
+2024-05-16 16:42:53.468  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : contribution-name-edit-group: Consumer stopped
+2024-05-16 16:42:53.468  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@5e62ede7
+2024-05-16 16:42:53.476  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.478  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : callback-topic-group: partitions revoked: [callback-topic-0]
+2024-05-16 16:42:53.491  INFO 13088 --- [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] essageListenerContainer$ListenerConsumer : callback-topic-group: Consumer stopped
+2024-05-16 16:42:53.491  INFO 13088 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@18648308
+2024-05-16 16:42:53.497  INFO 13088 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-payments.callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+2024-05-16 16:42:53.547  INFO 13088 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-05-16 16:42:53.547  INFO 13088 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'chama-payments.errorChannel' has 0 subscriber(s).
+2024-05-16 16:42:53.548  INFO 13088 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2024-05-16 16:42:54.331  INFO 13088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16 16:42:54.420  INFO 13088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16 16:42:54.464  INFO 13088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-16 16:42:56.591  INFO 13088 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-05-16 16:42:59.618  INFO 13088 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-05-16 16:42:59.745  INFO 13088 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - deregister  status: 200
+2024-05-16 16:42:59.757  INFO 13088 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-05-16 16:43:22.249  INFO 15524 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CHAMA-KYC with eureka with status DOWN
+2024-05-16 16:43:22.254  INFO 15524 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1715867002253, current=DOWN, previous=UP]
+2024-05-16 16:43:22.255  INFO 15524 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHAMA-KYC/host.docker.internal:chama-kyc:8083: registering service...
+2024-05-16 16:43:22.326  INFO 15524 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHAMA-KYC/host.docker.internal:chama-kyc:8083 - registration status: 204
+2024-05-16 16:43:22.886  INFO 15524 --- [KafkaConsumerDestination{consumerDestinationName='pollWinner-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : pollWinner-in-group: partitions revoked: [pollWinner-in-0-0]
+2024-05-16 16:43:22.931  INFO 15524 --- [KafkaConsumerDestination{consumerDestinationName='pollWinner-in-0', partitions=1, dlqName='null'}.container-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : pollWinner-in-group: Consumer stopped
+2024-05-16 16:43:22.941  INFO 15524 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@40249608
+2024-05-16 16:43:23.145  INFO 15524 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-kyc.pollWinner-in-0.pollWinner-in-group.errors' has 1 subscriber(s).
+2024-05-16 16:43:23.151  INFO 15524 --- [KafkaConsumerDestination{consumerDestinationName='deactivate-member-account-topic', partitions=1, dlqName='null'}.container-0-C-1] o.s.c.s.b.k.KafkaMessageChannelBinder$2  : disable-member-group: partitions revoked: [deactivate-member-account-topic-0]
+2024-05-16 16:43:23.165  INFO 15524 --- [KafkaConsumerDestination{consumerDestinationName='deactivate-member-account-topic', partitions=1, dlqName='null'}.container-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : disable-member-group: Consumer stopped
+2024-05-16 16:43:23.165  INFO 15524 --- [SpringApplicationShutdownHook] s.i.k.i.KafkaMessageDrivenChannelAdapter : stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@2d4529e0
+2024-05-16 16:43:23.170  INFO 15524 --- [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'chama-kyc.deactivate-member-account-topic.disable-member-group.errors' has 1 subscriber(s).
+2024-05-16 16:43:23.176  INFO 15524 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-05-16 16:43:23.177  INFO 15524 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'chama-kyc.errorChannel' has 0 subscriber(s).
+2024-05-16 16:43:23.178  INFO 15524 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2024-05-16 16:43:23.293  INFO 15524 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16 16:43:23.368  INFO 15524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16 16:43:23.423  INFO 15524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-16 16:43:25.705  INFO 15524 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-05-16 16:43:28.730  INFO 15524 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-05-16 16:43:28.758  INFO 15524 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHAMA-KYC/host.docker.internal:chama-kyc:8083 - deregister  status: 200
+2024-05-16 16:43:28.770  INFO 15524 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-05-16 16:43:52.274  INFO 3156 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CHAMA-POLLS with eureka with status DOWN
+2024-05-16 16:43:52.730  INFO 3156 --- [SpringApplicationShutdownHook] o.s.i.e.SourcePollingChannelAdapter      : stopped bean 'inMemorySwaggerResourcesProvider-out-0_spca'
+2024-05-16 16:43:52.800  INFO 3156 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-05-16 16:43:52.805  INFO 3156 --- [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'chama-polls.errorChannel' has 0 subscriber(s).
+2024-05-16 16:43:52.805  INFO 3156 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2024-05-16 16:43:52.806  INFO 3156 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {router} as a subscriber to the 'inMemorySwaggerResourcesProvider_integrationflow.channel#0' channel
+2024-05-16 16:43:52.807  INFO 3156 --- [SpringApplicationShutdownHook] o.s.integration.channel.DirectChannel    : Channel 'chama-polls.inMemorySwaggerResourcesProvider_integrationflow.channel#0' has 0 subscriber(s).
+2024-05-16 16:43:52.809  INFO 3156 --- [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'inMemorySwaggerResourcesProvider_integrationflow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'
+2024-05-16 16:43:52.976  INFO 3156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16 16:43:53.066  INFO 3156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16 16:43:53.103  INFO 3156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-16 16:43:55.255  INFO 3156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-05-16 16:43:55.288  INFO 3156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
