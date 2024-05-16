@@ -30,7 +30,7 @@ spring:
       kafka:
         binder:
           autoCreateTopics: true
-          brokers: 192.168.20.32:9092
+          brokers: localhost:9092
 
 ip:
   whitelist: http://localhost
@@ -38,7 +38,7 @@ ip:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://192.168.20.32:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
     register-with-eureka: false
     fetch-registry: true
   instance:
@@ -46,7 +46,7 @@ eureka:
 
 auth:
   server:
-    url: http://192.168.20.32:8200/
+    url: http://localhost:8200/
     basic: Basic Y2hhbWFfY2xpZW50aWQ6WTJoaGJXRnpaV055WlhRPQ==
 
 ecl:

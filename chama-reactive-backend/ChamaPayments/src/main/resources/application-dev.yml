@@ -1,6 +1,8 @@
 file:
   server:
-    host: http://192.168.20.66:8200
+    host: http://localhost:8200
+
+
 
 spring:
   main:
@@ -20,20 +22,22 @@ spring:
 #    password: Vicoba.22
 #    url: jdbc:postgresql://192.168.20.41:5432/chamadb2
 
-    datasource:
+  datasource:
+      driver-class-name: org.postgresql.Driver
       password: Amosmark
       url: jdbc:postgresql://localhost:5432/chamadb
       username: postgres
+
 
 
   jpa:
     hibernate:
       ddl-auto: update
     properties:
-      dialect: org.hibernate.dialect.PostgreSQL94Dialect
+      dialect: org.hibernate.dialect.PostgreSQLDialect
 
   redis:
-    host: 192.168.20.66
+    host: localhost
     port: 6379
 
     servlet:
@@ -53,7 +57,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.20.66:9092
+          brokers: localhost:9092
           auto-create-topics: true
       bindings:
         createMemberWallet-in-0:
@@ -137,12 +141,12 @@ app:
       key-alias: eclectics-auth
 
 vicoba:
-  url: http://192.168.20.88:8080/dcb/vicoba
+  url: http://localhost:8080/dcb/vicoba
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.20.66:8761/eureka
+      defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
     fetch-registry: true
   instance:

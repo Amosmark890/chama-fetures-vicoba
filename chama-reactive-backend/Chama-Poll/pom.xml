@@ -15,7 +15,7 @@
     <description>Chama-Poll</description>
     <properties>
         <java.version>11</java.version>
-        <spring-cloud.version>2020.0.4</spring-cloud.version>
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
         <hazelcast-eureka-version>2.0.1</hazelcast-eureka-version>
         <shedlock.version>4.37.0</shedlock.version>
     </properties>
@@ -23,6 +23,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-stream-kafka</artifactId>
+
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -174,7 +175,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2020.0.4</version>
+                <version>2021.0.3</version>
 <!--                <version>${spring-cloud.version}</version>-->
                 <type>pom</type>
                  <scope>import</scope>

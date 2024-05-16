@@ -34,11 +34,11 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.20.66:9092
+          brokers: http://localhost:9092
           auto-create-topics: true
 
   redis:
-    host: 192.168.20.66
+    host: localhost
     port: 6379
 
 app-configs:
@@ -98,7 +98,7 @@ app:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://192.168.20.66:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
     register-with-eureka: false
     fetch-registry: true
   instance:

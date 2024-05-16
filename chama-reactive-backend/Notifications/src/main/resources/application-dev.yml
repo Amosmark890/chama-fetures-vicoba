@@ -24,7 +24,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 10.20.2.12:9092
+          brokers: localhost:9092
           auto-create-topics: true
       bindings:
         sendText-in-0:
