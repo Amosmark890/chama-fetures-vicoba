@@ -811,3 +811,34 @@
 2024-05-16 11:39:25.850  INFO 4872 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2024-05-16 11:39:41.510  INFO 4872 --- [boundedElastic-83] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
 2024-05-16 11:39:41.513  INFO 4872 --- [boundedElastic-83] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 11:39:45.184  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:40:45.233  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:41:38.485  INFO 2708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:41:44.836  INFO 2708 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Disabling past polls...
+2024-05-16 11:41:45.362  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:41:47.129  INFO 2708 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 11:42:45.380  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:42:56.769  INFO 12112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:43:45.398  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:44:25.867  INFO 4872 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:44:41.521  INFO 4872 --- [boundedElastic-85] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 11:44:41.527  INFO 4872 --- [boundedElastic-85] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 11:44:45.410  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:45:45.433  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:46:38.500  INFO 2708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:46:45.444  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:46:47.157  INFO 2708 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 11:47:45.465  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:47:56.791  INFO 12112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:48:45.484  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:49:25.878  INFO 4872 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:49:41.530  INFO 4872 --- [boundedElastic-87] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... BEGIN
+2024-05-16 11:49:41.531  INFO 4872 --- [boundedElastic-87] c.s.i.MemberTransactionStatusServiceImpl : Enabling users to transact... END
+2024-05-16 11:49:45.498  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:50:45.506  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:51:38.507  INFO 2708 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-16 11:51:44.901  INFO 2708 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Disabling past polls...
+2024-05-16 11:51:45.515  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:51:47.203  INFO 2708 --- [scheduling-1] c.e.c.service.scheduler.PollsScheduler   : Checking for a winner...
+2024-05-16 11:52:45.534  INFO 4872 --- [scheduling-1] c.e.c.s.s.ContributionPaymentScheduler   : Schedule type not found... On monthly payment scheduling.
+2024-05-16 11:52:56.820  INFO 12112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
