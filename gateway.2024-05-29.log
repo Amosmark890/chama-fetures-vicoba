@@ -1,0 +1,692 @@
+3075 [restartedMain] INFO  c.e.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 20264 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\APIGateway\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+3086 [restartedMain] INFO  c.e.a.ApiGatewayApplication - The following 1 profile is active: "dev"
+3231 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+7029 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+7099 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+7501 [restartedMain] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=0dc1e043-ed79-31f8-a652-2f01a3fb8dfb
+7838 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7861 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7901 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7903 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7908 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+9609 [restartedMain] INFO  c.h.instance.DefaultAddressPicker - [LOCAL] [dev] [3.8.2] Prefer IPv4 stack is true.
+10251 [restartedMain] INFO  c.h.instance.DefaultAddressPicker - [LOCAL] [dev] [3.8.2] Picked [10.20.33.104]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+10278 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Hazelcast 3.8.2 (20170518 - a60f944) starting at [10.20.33.104]:5701
+10279 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Copyright (c) 2008-2016, Hazelcast, Inc. All Rights Reserved.
+10279 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Configured Hazelcast Serialization version : 1
+10978 [restartedMain] INFO  c.h.s.i.o.i.BackpressureRegulator - [10.20.33.104]:5701 [dev] [3.8.2] Backpressure is disabled
+13000 [restartedMain] INFO  com.hazelcast.instance.Node - [10.20.33.104]:5701 [dev] [3.8.2] Creating MulticastJoiner
+13290 [restartedMain] INFO  c.h.s.i.o.i.OperationExecutorImpl - [10.20.33.104]:5701 [dev] [3.8.2] Starting 4 partition threads
+13291 [restartedMain] INFO  c.h.s.i.o.i.OperationExecutorImpl - [10.20.33.104]:5701 [dev] [3.8.2] Starting 3 generic threads (1 dedicated for priority tasks)
+13299 [restartedMain] INFO  com.hazelcast.core.LifecycleService - [10.20.33.104]:5701 [dev] [3.8.2] [10.20.33.104]:5701 is STARTING
+16352 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Cluster version set to 3.8
+16353 [restartedMain] INFO  c.h.i.cluster.impl.MulticastJoiner - [10.20.33.104]:5701 [dev] [3.8.2] 
+
+
+Members [1] {
+	Member [10.20.33.104]:5701 - 6afa2544-b850-49c5-ba69-bf2270941b73 this
+}
+
+16405 [restartedMain] INFO  com.hazelcast.core.LifecycleService - [10.20.33.104]:5701 [dev] [3.8.2] [10.20.33.104]:5701 is STARTED
+16427 [restartedMain] INFO  c.hazelcast.cache.impl.CacheService - [10.20.33.104]:5701 [dev] [3.8.2] Added cache config: CacheConfig{name='buckets', managerPrefix='/hz/', inMemoryFormat=BINARY, backupCount=1, hotRestart=HotRestartConfig{enabled=false, fsync=false}}
+18924 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18925 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18926 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18926 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18927 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18927 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18927 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18929 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18929 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18929 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18930 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18930 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18931 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18932 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21166 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+21659 [restartedMain] INFO  o.s.c.f.c.c.BeanFactoryAwareFunctionRegistry - Can't determine default function definition. Please use 'spring.cloud.function.definition' property to explicitly define it.
+22128 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+22153 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+22368 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+22734 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22736 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-gateway.errorChannel' has 1 subscriber(s).
+22739 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+22762 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+23024 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+23042 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+23100 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+23100 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+23101 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+23101 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+23101 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+23101 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+23102 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+24456 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+24463 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+24469 [restartedMain] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+24481 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1716982332899 with initial instances count: 0
+24488 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CHAMA-GATEWAY with eureka with status UP
+24490 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1716982332912, current=UP, previous=STARTING]
+24496 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-GATEWAY/host.docker.internal:chama-gateway:8200: registering service...
+25066 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-GATEWAY/host.docker.internal:chama-gateway:8200 - registration status: 204
+26217 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8200
+26219 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8200
+27949 [restartedMain] INFO  c.e.a.ApiGatewayApplication - Started ApiGatewayApplication in 26.749 seconds (JVM running for 29.113)
+54473 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+54474 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+54475 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+54475 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+54475 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+54475 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+54475 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+54521 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+323264 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+493266 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** Trying to validate token **********************
+493274 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** No Bearer Token Found => Unsecured Endpoint **********************
+493414 [reactor-http-nio-3] INFO  c.h.i.p.impl.PartitionStateManager - [10.20.33.104]:5701 [dev] [3.8.2] Initializing cluster partition table arrangement...
+498677 [reactor-http-nio-3] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kafka
+499681 [reactor-http-nio-3] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kafka
+499792 [reactor-http-nio-3] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+500048 [reactor-http-nio-3] INFO  o.s.c.s.b.k.p.KafkaTopicProvisioner - Using kafka topic for outbound: request-response-log
+500062 [reactor-http-nio-3] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+500614 [reactor-http-nio-3] INFO  o.a.k.common.utils.AppInfoParser - Kafka version: 3.1.1
+500640 [reactor-http-nio-3] INFO  o.a.k.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+500641 [reactor-http-nio-3] INFO  o.a.k.common.utils.AppInfoParser - Kafka startTimeMs: 1716982809018
+502590 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+502605 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+502606 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+502606 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+502641 [reactor-http-nio-3] INFO  o.a.k.c.producer.ProducerConfig - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+502645 [reactor-http-nio-3] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+502734 [reactor-http-nio-3] INFO  o.a.k.common.utils.AppInfoParser - Kafka version: 3.1.1
+502734 [reactor-http-nio-3] INFO  o.a.k.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+502735 [reactor-http-nio-3] INFO  o.a.k.common.utils.AppInfoParser - Kafka startTimeMs: 1716982811156
+502797 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tr3fxpXSThqFYHPYWEI_7w
+502845 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition request-response-log-0 to 0 since the associated topicId changed from null to QHi1FTdtRM-3FxDj2sy9kA
+502903 [reactor-http-nio-3] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'unknown.channel.name' has 1 subscriber(s).
+502937 [reactor-http-nio-3] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+623338 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+923362 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1043722 [kafka-producer-network-thread | producer-1] INFO  o.a.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+1223396 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1523480 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1823514 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2123594 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2423742 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2723755 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3023797 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3323830 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3623874 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3923951 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4224011 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4524066 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4824123 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5124623 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5424627 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5724639 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5915891 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** Trying to validate token **********************
+5915900 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** No Bearer Token Found => Unsecured Endpoint **********************
+5922099 [reactor-http-nio-3] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+5922433 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition request-response-log-0 to 0 since the associated topicId changed from null to QHi1FTdtRM-3FxDj2sy9kA
+6024761 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6324774 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6624781 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6924786 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7225040 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7525331 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7826049 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8126128 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8426448 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8442526 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** Trying to validate token **********************
+8442527 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** No Bearer Token Found => Unsecured Endpoint **********************
+8446886 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** Trying to validate token **********************
+8446887 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** No Bearer Token Found => Unsecured Endpoint **********************
+8726525 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+9026605 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+9326697 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+9626707 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+9926787 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10226943 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10526951 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10826965 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12492864 [hz._hzInstance_1_dev.cached.thread-9] INFO  c.h.i.c.i.ClusterHeartbeatManager - [10.20.33.104]:5701 [dev] [3.8.2] System clock apparently jumped from 2024-05-29 17:33:21.718 to 2024-05-29 17:59:57.569 since last heartbeat (+1590851 ms)
+12494346 [hz._hzInstance_1_dev.cached.thread-9] WARN  c.h.i.c.i.ClusterHeartbeatManager - [10.20.33.104]:5701 [dev] [3.8.2] Resetting master confirmation timestamps because of huge system clock jump! Clock-Jump: 1590851 ms, Master-Confirmation-Timeout: 350000 ms
+12494465 [hz._hzInstance_1_dev.cached.thread-9] WARN  c.h.i.c.i.ClusterHeartbeatManager - [10.20.33.104]:5701 [dev] [3.8.2] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 1590851 ms, Heartbeat-Timeout: 300000 ms
+12494465 [hz._hzInstance_1_dev.InvocationMonitorThread] WARN  c.h.s.i.o.impl.InvocationMonitor - [10.20.33.104]:5701 [dev] [3.8.2] MonitorInvocationsTask delayed 1595151 ms
+12494488 [hz._hzInstance_1_dev.InvocationMonitorThread] WARN  c.h.s.i.o.impl.InvocationMonitor - [10.20.33.104]:5701 [dev] [3.8.2] BroadcastOperationControlTask delayed 1591190 ms
+12511900 [kafka-producer-network-thread | producer-1] INFO  o.a.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node 1 disconnected.
+12555332 [hz._hzInstance_1_dev.cached.thread-9] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+12673280 [hz._hzInstance_1_dev.cached.thread-1] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+12722152 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12793270 [hz._hzInstance_1_dev.cached.thread-4] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+12913273 [hz._hzInstance_1_dev.cached.thread-2] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13022170 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13033301 [hz._hzInstance_1_dev.cached.thread-11] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13153285 [hz._hzInstance_1_dev.cached.thread-10] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13273274 [hz._hzInstance_1_dev.cached.thread-10] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13322188 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13393282 [hz._hzInstance_1_dev.cached.thread-10] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13513285 [hz._hzInstance_1_dev.cached.thread-10] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13622205 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13633278 [hz._hzInstance_1_dev.cached.thread-13] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13753287 [hz._hzInstance_1_dev.cached.thread-4] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13873281 [hz._hzInstance_1_dev.cached.thread-3] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+13922210 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13993282 [hz._hzInstance_1_dev.cached.thread-12] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14113576 [hz._hzInstance_1_dev.cached.thread-12] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14222234 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14233277 [hz._hzInstance_1_dev.cached.thread-10] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14353658 [hz._hzInstance_1_dev.cached.thread-4] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14473279 [hz._hzInstance_1_dev.cached.thread-14] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14522278 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14593275 [hz._hzInstance_1_dev.cached.thread-4] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14640074 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** Trying to validate token **********************
+14640079 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** No Bearer Token Found => Unsecured Endpoint **********************
+14643247 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** Trying to validate token **********************
+14643248 [reactor-http-nio-3] INFO  c.e.apigateway.filters.AuthFilter - ********************** No Bearer Token Found => Unsecured Endpoint **********************
+14713304 [hz._hzInstance_1_dev.cached.thread-9] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14822326 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14833291 [hz._hzInstance_1_dev.cached.thread-13] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+14953284 [hz._hzInstance_1_dev.cached.thread-3] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+15073286 [hz._hzInstance_1_dev.cached.thread-3] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)
+15122340 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15193286 [hz._hzInstance_1_dev.cached.thread-2] WARN  c.h.i.cluster.impl.MulticastService - [10.20.33.104]:5701 [dev] [3.8.2] You probably have too long Hazelcast configuration!
+java.net.NoRouteToHostException: No route to host: Datagram send failed
+	at java.base/java.net.TwoStacksPlainDatagramSocketImpl.send0(Native Method)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.send(AbstractPlainDatagramSocketImpl.java:155)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at com.hazelcast.internal.cluster.impl.MulticastService.send(MulticastService.java:252)
+	at com.hazelcast.internal.cluster.impl.MulticastJoiner.searchForOtherClusters(MulticastJoiner.java:111)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.searchForOtherClusters(SplitBrainHandler.java:75)
+	at com.hazelcast.internal.cluster.impl.SplitBrainHandler.run(SplitBrainHandler.java:42)
+	at com.hazelcast.spi.impl.executionservice.impl.DelegateAndSkipOnConcurrentExecutionDecorator$DelegateDecorator.run(DelegateAndSkipOnConcurrentExecutionDecorator.java:66)
+	at com.hazelcast.util.executor.CachedExecutorServiceDelegate$Worker.run(CachedExecutorServiceDelegate.java:228)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	at com.hazelcast.util.executor.HazelcastManagedThread.executeRun(HazelcastManagedThread.java:64)
+	at com.hazelcast.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:80)

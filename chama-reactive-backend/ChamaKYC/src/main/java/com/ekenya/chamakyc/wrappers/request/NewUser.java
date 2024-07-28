@@ -54,7 +54,7 @@ public class NewUser {
     @Pattern(regexp = EMPTY_OR_UPPER_AND_LOWER_CASE_MATCH, message = "Language should not contain digits or special characters")
     private String language = "English";
     @Size(max = 10, message = "Gender size is not valid")
-    @Pattern(regexp = "(male|female/Male/Female)", message = "Only male/Male or female/Female allowed")
+    @Pattern(regexp = "(male|female|Male|Female)", message = "Only male/Male or female/Female allowed")
     private String gender = "Prefer Not To Say";
     private String userDeviceId;
     private String oldPassword;

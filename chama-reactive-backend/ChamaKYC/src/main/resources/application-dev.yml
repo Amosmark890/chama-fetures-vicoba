@@ -7,7 +7,7 @@ jdbc:
 
 file:
   server:
-    host: 192.168.20.66:8200
+    host: localhost:8200
 
 kafka:
   bootstrap-Address: localhost:9092
@@ -18,8 +18,12 @@ spring:
 
 #  datasource:
 #    username: backend
-#    password: Vicoba.22
+#    password: backend2024@
 #    url: jdbc:postgresql://192.168.20.41:5432/chamadb
+#  url: jdbc:postgresql://192.168.20.41:5432/Database_srv_Test
+
+
+
   datasource:
     password: Amosmark
 #    url: jdbc:postgresql://192.168.20.41:5432/chamadb
@@ -41,6 +45,7 @@ spring:
   redis:
     host: localhost
     port: 6379
+    password: my_redis_password
 
   servlet:
     multipart:
@@ -87,7 +92,7 @@ app:
 
 vicoba:
   url: http://192.168.20.88:8080/dcb/vicoba
-  portal: http://192.168.20.42:8000/
+  portal: http://localhost:8000/
 
 eureka:
   client:

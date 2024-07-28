@@ -1,0 +1,167 @@
+7739 [restartedMain] INFO  c.e.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 19824 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\APIGateway\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+7766 [restartedMain] INFO  c.e.a.ApiGatewayApplication - The following 1 profile is active: "dev"
+8142 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15171 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+15266 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+16143 [restartedMain] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=0dc1e043-ed79-31f8-a652-2f01a3fb8dfb
+16776 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16794 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16862 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16866 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16907 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19924 [restartedMain] INFO  c.h.instance.DefaultAddressPicker - [LOCAL] [dev] [3.8.2] Prefer IPv4 stack is true.
+21174 [restartedMain] INFO  c.h.instance.DefaultAddressPicker - [LOCAL] [dev] [3.8.2] Picked [10.20.33.104]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+21217 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Hazelcast 3.8.2 (20170518 - a60f944) starting at [10.20.33.104]:5701
+21218 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Copyright (c) 2008-2016, Hazelcast, Inc. All Rights Reserved.
+21218 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Configured Hazelcast Serialization version : 1
+22235 [restartedMain] INFO  c.h.s.i.o.i.BackpressureRegulator - [10.20.33.104]:5701 [dev] [3.8.2] Backpressure is disabled
+26222 [restartedMain] INFO  com.hazelcast.instance.Node - [10.20.33.104]:5701 [dev] [3.8.2] Creating MulticastJoiner
+26761 [restartedMain] INFO  c.h.s.i.o.i.OperationExecutorImpl - [10.20.33.104]:5701 [dev] [3.8.2] Starting 4 partition threads
+26763 [restartedMain] INFO  c.h.s.i.o.i.OperationExecutorImpl - [10.20.33.104]:5701 [dev] [3.8.2] Starting 3 generic threads (1 dedicated for priority tasks)
+26774 [restartedMain] INFO  com.hazelcast.core.LifecycleService - [10.20.33.104]:5701 [dev] [3.8.2] [10.20.33.104]:5701 is STARTING
+30091 [restartedMain] INFO  com.hazelcast.system - [10.20.33.104]:5701 [dev] [3.8.2] Cluster version set to 3.8
+30093 [restartedMain] INFO  c.h.i.cluster.impl.MulticastJoiner - [10.20.33.104]:5701 [dev] [3.8.2] 
+
+
+Members [1] {
+	Member [10.20.33.104]:5701 - fdabfae2-d7e3-4a7c-a77b-522bc957aebf this
+}
+
+30158 [restartedMain] INFO  com.hazelcast.core.LifecycleService - [10.20.33.104]:5701 [dev] [3.8.2] [10.20.33.104]:5701 is STARTED
+30201 [restartedMain] INFO  c.hazelcast.cache.impl.CacheService - [10.20.33.104]:5701 [dev] [3.8.2] Added cache config: CacheConfig{name='buckets', managerPrefix='/hz/', inMemoryFormat=BINARY, backupCount=1, hotRestart=HotRestartConfig{enabled=false, fsync=false}}
+38805 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+38805 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+38806 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+38806 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+38806 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+38806 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+38807 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+38807 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+38808 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+38809 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+38810 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+38811 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+38811 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+38811 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+42666 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+43466 [restartedMain] INFO  o.s.c.f.c.c.BeanFactoryAwareFunctionRegistry - Can't determine default function definition. Please use 'spring.cloud.function.definition' property to explicitly define it.
+43951 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+43986 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+44413 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+45019 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+45020 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-gateway.errorChannel' has 1 subscriber(s).
+45021 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+45072 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+45461 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+45474 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+45569 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+45569 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+45570 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+45570 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+45571 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+45571 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+45571 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+46777 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+46783 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+46789 [restartedMain] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+46803 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1718358078579 with initial instances count: 1
+46808 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CHAMA-GATEWAY with eureka with status UP
+46809 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1718358078588, current=UP, previous=STARTING]
+46855 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-GATEWAY/host.docker.internal:chama-gateway:8200: registering service...
+47080 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-GATEWAY/host.docker.internal:chama-gateway:8200 - registration status: 204
+49149 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8200
+49151 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8200
+50914 [restartedMain] INFO  c.e.a.ApiGatewayApplication - Started ApiGatewayApplication in 47.01 seconds (JVM running for 55.001)
+345868 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+646644 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+947248 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1247481 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1548092 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1848596 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4800 [restartedMain] INFO  c.e.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 1372 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\APIGateway\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+4807 [restartedMain] INFO  c.e.a.ApiGatewayApplication - The following 1 profile is active: "dev"
+5005 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+9775 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+9891 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+10338 [restartedMain] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=0dc1e043-ed79-31f8-a652-2f01a3fb8dfb
+10712 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10737 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10801 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10805 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10811 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13043 [restartedMain] INFO  c.h.instance.DefaultAddressPicker - [LOCAL] [dev] [3.8.2] Prefer IPv4 stack is true.
+13487 [restartedMain] INFO  c.h.instance.DefaultAddressPicker - [LOCAL] [dev] [3.8.2] Picked [10.50.50.56]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+13524 [restartedMain] INFO  com.hazelcast.system - [10.50.50.56]:5701 [dev] [3.8.2] Hazelcast 3.8.2 (20170518 - a60f944) starting at [10.50.50.56]:5701
+13525 [restartedMain] INFO  com.hazelcast.system - [10.50.50.56]:5701 [dev] [3.8.2] Copyright (c) 2008-2016, Hazelcast, Inc. All Rights Reserved.
+13525 [restartedMain] INFO  com.hazelcast.system - [10.50.50.56]:5701 [dev] [3.8.2] Configured Hazelcast Serialization version : 1
+15103 [restartedMain] INFO  c.h.s.i.o.i.BackpressureRegulator - [10.50.50.56]:5701 [dev] [3.8.2] Backpressure is disabled
+18642 [restartedMain] INFO  com.hazelcast.instance.Node - [10.50.50.56]:5701 [dev] [3.8.2] Creating MulticastJoiner
+19154 [restartedMain] INFO  c.h.s.i.o.i.OperationExecutorImpl - [10.50.50.56]:5701 [dev] [3.8.2] Starting 4 partition threads
+19157 [restartedMain] INFO  c.h.s.i.o.i.OperationExecutorImpl - [10.50.50.56]:5701 [dev] [3.8.2] Starting 3 generic threads (1 dedicated for priority tasks)
+19170 [restartedMain] INFO  com.hazelcast.core.LifecycleService - [10.50.50.56]:5701 [dev] [3.8.2] [10.50.50.56]:5701 is STARTING
+22611 [restartedMain] INFO  com.hazelcast.system - [10.50.50.56]:5701 [dev] [3.8.2] Cluster version set to 3.8
+22613 [restartedMain] INFO  c.h.i.cluster.impl.MulticastJoiner - [10.50.50.56]:5701 [dev] [3.8.2] 
+
+
+Members [1] {
+	Member [10.50.50.56]:5701 - d84b39da-d017-4329-a082-23bee583d602 this
+}
+
+22658 [restartedMain] INFO  com.hazelcast.core.LifecycleService - [10.50.50.56]:5701 [dev] [3.8.2] [10.50.50.56]:5701 is STARTED
+22688 [restartedMain] INFO  c.hazelcast.cache.impl.CacheService - [10.50.50.56]:5701 [dev] [3.8.2] Added cache config: CacheConfig{name='buckets', managerPrefix='/hz/', inMemoryFormat=BINARY, backupCount=1, hotRestart=HotRestartConfig{enabled=false, fsync=false}}
+25217 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+26197 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+26199 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+26199 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+26200 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+26201 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+26201 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+26209 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+26210 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+26212 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+26213 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+26215 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+26216 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+26217 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+26217 [restartedMain] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+28538 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+30214 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+30364 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+30787 [restartedMain] INFO  o.s.c.f.c.c.BeanFactoryAwareFunctionRegistry - Can't determine default function definition. Please use 'spring.cloud.function.definition' property to explicitly define it.
+31186 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+31212 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+31386 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+31685 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+31686 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-gateway.errorChannel' has 1 subscriber(s).
+31687 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+31711 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+31878 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+31912 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+31978 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+31978 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+31979 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+31980 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+31980 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+31981 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+31981 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+33021 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+33030 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+33038 [restartedMain] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+33049 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1718366365966 with initial instances count: 1
+33056 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CHAMA-GATEWAY with eureka with status UP
+33057 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1718366365976, current=UP, previous=STARTING]
+33063 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-GATEWAY/localhost:chama-gateway:8200: registering service...
+33185 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-GATEWAY/localhost:chama-gateway:8200 - registration status: 204
+34284 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8200
+34286 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8200
+35876 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+37452 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+37501 [restartedMain] INFO  c.e.a.ApiGatewayApplication - Started ApiGatewayApplication in 36.03 seconds (JVM running for 38.464)
+331999 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+632007 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+932018 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1232021 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1532031 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1832036 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2132051 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2432065 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

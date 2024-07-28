@@ -1,0 +1,982 @@
+4031 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - Starting ChamaPaymentsApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 10456 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\ChamaPayments\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+4077 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - The following profiles are active: dev
+4235 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+4238 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14063 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14069 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15606 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1480 ms. Found 30 JPA repository interfaces.
+15691 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+15694 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15813 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AccountTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15821 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AccountsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15822 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AmounttypeRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15824 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionLoanRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15825 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15826 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionSchedulePaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15827 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionTypesRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15831 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionsPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15832 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.EsbRequestLogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15833 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.GuarantorsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15835 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.InvestmentsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15836 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanPenaltyPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15837 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanPenaltyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15838 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanapplicationsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15843 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanproductsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15845 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanrepaymentpendingapprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15846 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoansdisbursedRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15847 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoansrepaymentRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15848 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.MemberTransactionStatusRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15849 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.MessagetemplatesRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.OutstandingContributionPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15852 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.OverpaidContributionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15853 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.PenaltyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15853 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ScheduleTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15856 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15857 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionlogsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15858 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionspendingaApprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15859 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.WithdrawallogsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15861 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.WithdrawalspendingapprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+15861 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 0 Redis repository interfaces.
+17414 [restartedMain] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=5abc6003-64a2-3c3e-8650-b48365a8b2bb
+17857 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+17897 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+21058 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21293 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21301 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21424 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21564 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21663 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21669 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21829 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21835 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21839 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+24596 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+24661 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+26214 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+26316 [restartedMain] INFO  o.f.c.i.database.base.DatabaseType - Database: jdbc:postgresql://localhost:5432/chamadb (PostgreSQL 16.2)
+26328 [restartedMain] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: org.flywaydb.core.internal.database.postgresql.PostgreSQLDatabaseType@67ceb329 16.2 is newer than this version of Flyway and support has not been tested. The latest supported version of org.flywaydb.core.internal.database.postgresql.PostgreSQLDatabaseType@67ceb329 is 13.
+26415 [restartedMain] INFO  o.f.c.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.060s)
+26429 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+26431 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+27290 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+29236 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+29976 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+30356 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+36257 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+36286 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+62446 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+62737 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+66084 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createMemberWallet-in-0' has 1 subscriber(s).
+66098 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createGroupContribution-in-0' has 1 subscriber(s).
+66103 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createGroupAccount-in-0' has 1 subscriber(s).
+66122 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.enableGroupContributions-in-0' has 1 subscriber(s).
+66137 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.disableGroupContributions-in-0' has 1 subscriber(s).
+66146 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.editContributionName-in-0' has 1 subscriber(s).
+66161 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.fundsTransferCallback-in-0' has 1 subscriber(s).
+69170 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+70039 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+70040 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-payments.errorChannel' has 1 subscriber(s).
+70041 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+70064 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+70340 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+70356 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+70417 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+70417 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+70418 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+70418 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+70418 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+70419 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+70419 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+71190 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+71230 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+71237 [restartedMain] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+71246 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1716017561629 with initial instances count: 2
+71260 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CHAMA-PAYMENTS with eureka with status UP
+71293 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1716017561678, current=UP, previous=STARTING]
+71300 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kafka
+71496 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+72132 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+72345 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kafka
+72346 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+132990 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createMemberWallet-in-0; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:347)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:231)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:383)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:357)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:334)
+	... 33 common frames omitted
+133006 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+193093 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createGroupContribution-in-0; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:347)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:231)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:383)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:357)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:334)
+	... 33 common frames omitted
+193094 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+223059 [scheduling-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createMemberWallet-in-0; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:347)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:231)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:202)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:383)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:357)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:334)
+	... 14 common frames omitted
+253135 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createGroupAccount-in-0; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:347)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:231)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:383)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:357)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:334)
+	... 33 common frames omitted
+253137 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+283121 [scheduling-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createGroupContribution-in-0; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:347)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:231)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:202)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:383)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:357)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:334)
+	... 14 common frames omitted
+286347 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for enableGroupContributions-in-0; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:347)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:231)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.TimeoutException: null
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:108)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicAndPartitions(KafkaTopicProvisioner.java:383)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopicIfNecessary(KafkaTopicProvisioner.java:357)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.createTopic(KafkaTopicProvisioner.java:334)
+	... 33 common frames omitted
+286348 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+286910 [scheduling-1] WARN  o.s.c.s.b.k.p.KafkaTopicProvisioner - Attempt to create topic: createMemberWallet-in-0. Topic already exists.
+286923 [restartedMain] WARN  o.s.c.s.b.k.p.KafkaTopicProvisioner - Attempt to create topic: disableGroupContributions-in-0. Topic already exists.
+286979 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for disableGroupContributions-in-0; nested exception is java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:252)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32)
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:104)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:241)
+	... 32 common frames omitted
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+286980 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+287024 [scheduling-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createMemberWallet-in-0; nested exception is java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:252)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:202)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32)
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:104)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:241)
+	... 13 common frames omitted
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+287245 [restartedMain] WARN  o.s.c.s.b.k.p.KafkaTopicProvisioner - Attempt to create topic: contribution-name-edit-topic. Topic already exists.
+287248 [scheduling-1] WARN  o.s.c.s.b.k.p.KafkaTopicProvisioner - Attempt to create topic: createGroupAccount-in-0. Topic already exists.
+287378 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for contribution-name-edit-topic; nested exception is java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:252)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32)
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:104)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:241)
+	... 32 common frames omitted
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+287379 [scheduling-1] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for createGroupAccount-in-0; nested exception is java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:252)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.lambda$rescheduleConsumerBinding$1(BindingService.java:202)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32)
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:104)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:241)
+	... 13 common frames omitted
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+287379 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+287942 [restartedMain] WARN  o.s.c.s.b.k.p.KafkaTopicProvisioner - Attempt to create topic: callback-topic. Topic already exists.
+288119 [restartedMain] ERROR o.s.c.stream.binding.BindingService - Failed to create consumer binding; retrying in 30 seconds
+org.springframework.cloud.stream.provisioning.ProvisioningException: Provisioning exception encountered for callback-topic; nested exception is java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:252)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:197)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.provisionConsumerDestination(KafkaTopicProvisioner.java:86)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:403)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:91)
+	at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:143)
+	at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:177)
+	at org.springframework.cloud.stream.binding.BindingService.bindConsumer(BindingService.java:134)
+	at org.springframework.cloud.stream.binding.AbstractBindableProxyFactory.createAndBindInputs(AbstractBindableProxyFactory.java:118)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:57)
+	at org.springframework.cloud.stream.binding.InputBindingLifecycle.start(InputBindingLifecycle.java:34)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.eclectics.chamapayments.ChamaPaymentsApplication.main(ChamaPaymentsApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+	at org.apache.kafka.common.internals.KafkaFutureImpl.wrapAndThrow(KafkaFutureImpl.java:45)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.access$000(KafkaFutureImpl.java:32)
+	at org.apache.kafka.common.internals.KafkaFutureImpl$SingleWaiter.await(KafkaFutureImpl.java:104)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:272)
+	at org.springframework.cloud.stream.binder.kafka.provisioning.KafkaTopicProvisioner.doProvisionConsumerDestination(KafkaTopicProvisioner.java:241)
+	... 32 common frames omitted
+Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+289926 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8090
+289929 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+296531 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+296646 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+296724 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+297278 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+300444 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+303543 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+303615 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+303659 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+304064 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+304246 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - Started ChamaPaymentsApplication in 302.695 seconds (JVM running for 307.91)
+304550 [boundedElastic-1] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+304563 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+304757 [boundedElastic-1] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+304775 [scheduling-1] INFO  o.s.s.a.AnnotationAsyncExecutionInterceptor - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [remindersExecutor, taskScheduler]
+314357 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+314451 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 0 subscriber(s).
+314451 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+314455 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 2 subscriber(s).
+314976 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@cad29ac
+317222 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+317223 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 0 subscriber(s).
+317223 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+317223 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 2 subscriber(s).
+317469 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@daaac85
+317470 [scheduling-1] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 1 threads
+318240 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+318240 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 0 subscriber(s).
+318241 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+318241 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 2 subscriber(s).
+318317 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@75dc18f8
+318318 [scheduling-1] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 2 threads
+319060 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions assigned: [createGroupContribution-in-0-0]
+319463 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+319464 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 0 subscriber(s).
+319464 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+319465 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 2 subscriber(s).
+319585 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@7b0cf402
+319586 [scheduling-1] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 3 threads
+319794 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+319795 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 0 subscriber(s).
+319795 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+319795 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 2 subscriber(s).
+319824 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@1871826b
+319837 [scheduling-1] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 4 threads
+320675 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+320676 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 0 subscriber(s).
+320682 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+320683 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 2 subscriber(s).
+320759 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@3a38a1e3
+320760 [scheduling-1] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 5 threads
+320899 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions assigned: [enableGroupContributions-in-0-0]
+321028 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+321028 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 0 subscriber(s).
+321028 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+321029 [scheduling-1] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 2 subscriber(s).
+321044 [scheduling-1] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@771996a7
+321044 [scheduling-1] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 6 threads
+322532 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions assigned: [disableGroupContributions-in-0-0]
+323043 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions assigned: [createMemberWallet-in-0-0]
+324393 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions assigned: [contribution-name-edit-topic-0]
+324464 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions assigned: [callback-topic-0]
+324465 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions assigned: [createGroupAccount-in-0-0]
+364595 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+370470 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+424617 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+439382 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CHAMA-PAYMENTS with eureka with status DOWN
+439384 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1716017929769, current=DOWN, previous=UP]
+439385 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+439556 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions revoked: [createMemberWallet-in-0-0]
+439456 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+439612 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-member-wallet-group: Consumer stopped
+439619 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@7b0cf402
+439697 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+439703 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions revoked: [createGroupContribution-in-0-0]
+439771 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-group-contribution-group: Consumer stopped
+439772 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@cad29ac
+439784 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+439788 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions revoked: [createGroupAccount-in-0-0]
+439806 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-group-account-group: Consumer stopped
+439809 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@3a38a1e3
+439827 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+439833 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions revoked: [enableGroupContributions-in-0-0]
+439869 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - enableGroupContributions-group: Consumer stopped
+439872 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@daaac85
+439891 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+439899 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions revoked: [disableGroupContributions-in-0-0]
+439925 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - disable-group-contributions-group: Consumer stopped
+439926 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@75dc18f8
+439938 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+439941 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions revoked: [contribution-name-edit-topic-0]
+439979 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - contribution-name-edit-group: Consumer stopped
+439980 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@1871826b
+439995 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+440000 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions revoked: [callback-topic-0]
+440018 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - callback-topic-group: Consumer stopped
+440020 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@771996a7
+440035 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+440140 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+440141 [SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-payments.errorChannel' has 0 subscriber(s).
+440142 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+440611 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+440618 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+440650 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+442694 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+445706 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+445722 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - deregister  status: 200
+445729 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+3745 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - Starting ChamaPaymentsApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 11160 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\ChamaPayments\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+3772 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - The following profiles are active: dev
+3970 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+3971 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+9573 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+9578 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1038 ms. Found 30 JPA repository interfaces.
+10693 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10696 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10786 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AccountTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10791 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AccountsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10792 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AmounttypeRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10794 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionLoanRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10796 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10797 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionSchedulePaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10800 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionTypesRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10802 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionsPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10804 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.EsbRequestLogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10805 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10807 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.GuarantorsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10808 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.InvestmentsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10809 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanPenaltyPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10810 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanPenaltyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10812 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanapplicationsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10814 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanproductsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10815 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanrepaymentpendingapprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10817 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoansdisbursedRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10818 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoansrepaymentRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10819 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.MemberTransactionStatusRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10820 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.MessagetemplatesRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10821 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.OutstandingContributionPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10822 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.OverpaidContributionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10829 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.PenaltyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10831 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ScheduleTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10835 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionlogsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10836 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionspendingaApprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10837 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.WithdrawallogsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10884 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.WithdrawalspendingapprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10885 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 0 Redis repository interfaces.
+12196 [restartedMain] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=5abc6003-64a2-3c3e-8650-b48365a8b2bb
+12532 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+12564 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+13453 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13806 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13812 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13822 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13877 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13969 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13974 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14110 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14168 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14172 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15222 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+15264 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16636 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16779 [restartedMain] INFO  o.f.c.i.database.base.DatabaseType - Database: jdbc:postgresql://localhost:5432/chamadb (PostgreSQL 16.2)
+16792 [restartedMain] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: org.flywaydb.core.internal.database.postgresql.PostgreSQLDatabaseType@58dcdeae 16.2 is newer than this version of Flyway and support has not been tested. The latest supported version of org.flywaydb.core.internal.database.postgresql.PostgreSQLDatabaseType@58dcdeae is 13.
+16937 [restartedMain] INFO  o.f.c.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.110s)
+16965 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+17057 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+17767 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17961 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+18615 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+19177 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+24859 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+24882 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+38069 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+38175 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+40102 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createMemberWallet-in-0' has 1 subscriber(s).
+40109 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createGroupContribution-in-0' has 1 subscriber(s).
+40113 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createGroupAccount-in-0' has 1 subscriber(s).
+40116 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.enableGroupContributions-in-0' has 1 subscriber(s).
+40119 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.disableGroupContributions-in-0' has 1 subscriber(s).
+40146 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.editContributionName-in-0' has 1 subscriber(s).
+40150 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.fundsTransferCallback-in-0' has 1 subscriber(s).
+42355 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+43483 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+43483 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-payments.errorChannel' has 1 subscriber(s).
+43484 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+43507 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+43711 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+43749 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+43829 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+43829 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+43830 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+43833 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+43833 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+43835 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+43835 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+44598 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+44604 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+44613 [restartedMain] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+44623 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1716017990142 with initial instances count: 2
+44649 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CHAMA-PAYMENTS with eureka with status UP
+44651 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1716017990172, current=UP, previous=STARTING]
+44665 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kafka
+44661 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+44937 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+45554 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kafka
+45633 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+47628 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+47632 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 0 subscriber(s).
+47634 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+47635 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 2 subscriber(s).
+47718 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@6a115451
+47726 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+48518 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+48519 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 0 subscriber(s).
+48520 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+48520 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 2 subscriber(s).
+48600 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@2165f881
+48625 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 1 threads
+48636 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+49072 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+49073 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 0 subscriber(s).
+49075 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+49075 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 2 subscriber(s).
+49128 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@2921e595
+49129 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 2 threads
+49141 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+49305 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+49307 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 0 subscriber(s).
+49307 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+49326 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 2 subscriber(s).
+49381 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@27a85121
+49382 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 3 threads
+49390 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+49598 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+49599 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 0 subscriber(s).
+49600 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+49600 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 2 subscriber(s).
+49637 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@650e34fc
+49640 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 4 threads
+49648 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+49837 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+49841 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 0 subscriber(s).
+49841 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+49841 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 2 subscriber(s).
+49882 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@945866d
+49883 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 5 threads
+49892 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+50132 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+50132 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 0 subscriber(s).
+50134 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+50134 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 2 subscriber(s).
+50158 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@790aa6d2
+50158 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 6 threads
+50966 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8090
+50969 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+51242 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions assigned: [createMemberWallet-in-0-0]
+51998 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions assigned: [createGroupContribution-in-0-0]
+52234 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions assigned: [createGroupAccount-in-0-0]
+52482 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions assigned: [enableGroupContributions-in-0-0]
+52820 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+52842 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+52850 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+52877 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions assigned: [disableGroupContributions-in-0-0]
+52892 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+53335 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions assigned: [contribution-name-edit-topic-0]
+53688 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions assigned: [callback-topic-0]
+53947 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+54804 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+54815 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+54822 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+55121 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+55325 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - Started ChamaPaymentsApplication in 53.847 seconds (JVM running for 57.531)
+55718 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+55691 [boundedElastic-1] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+56099 [boundedElastic-1] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+56153 [scheduling-1] INFO  o.s.s.a.AnnotationAsyncExecutionInterceptor - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [remindersExecutor, taskScheduler]
+115838 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+175879 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+235898 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+295914 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+343847 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+355593 [boundedElastic-3] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+355598 [boundedElastic-3] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+355920 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+415932 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+475944 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+535960 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+595976 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+643861 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+655634 [boundedElastic-5] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+655636 [boundedElastic-5] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+655993 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+716035 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+776052 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+836074 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+896089 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+943864 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+955635 [boundedElastic-7] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+955651 [boundedElastic-7] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+956112 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1016122 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1076143 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1136157 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1196175 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1243874 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1254538 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentReminders - started reminders...
+1254589 [reminders-send-async1] INFO  c.e.c.s.s.ContributionPaymentReminders - Cannot find weekly schedule type...
+1254592 [reminders-send-async1] INFO  c.e.c.s.s.ContributionPaymentReminders - Cannot find quarterly schedule type...
+1254601 [reminders-send-async1] INFO  c.e.c.s.s.ContributionPaymentReminders - Cannot find yearly schedule type...
+1254623 [reminders-send-async2] INFO  c.e.c.s.s.ContributionPaymentReminders - Cannot find monthly schedule type...
+1255651 [boundedElastic-9] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1255655 [boundedElastic-9] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1256238 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1316258 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1376275 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1436300 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1496320 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1543891 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1555670 [boundedElastic-11] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1555674 [boundedElastic-11] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1556333 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1616347 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1676370 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1736392 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1796475 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1843902 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1855693 [boundedElastic-13] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1855699 [boundedElastic-13] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1856497 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1916502 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1976551 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2036565 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2096580 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2143910 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2155710 [boundedElastic-15] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+2155712 [boundedElastic-15] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+2156595 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2216613 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2276634 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2336649 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2396659 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13237435 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13237750 [boundedElastic-17] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+13237757 [boundedElastic-17] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+13240296 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions lost: [enableGroupContributions-in-0-0]
+13240302 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions revoked: [enableGroupContributions-in-0-0]
+13243601 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions assigned: [enableGroupContributions-in-0-0]
+13244380 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+39757358 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h22m29s467ms197µs).
+39772532 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions lost: [createGroupAccount-in-0-0]
+39772997 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions lost: [disableGroupContributions-in-0-0]
+39772994 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions lost: [contribution-name-edit-topic-0]
+39772987 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions lost: [createMemberWallet-in-0-0]
+39772994 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions lost: [callback-topic-0]
+39773041 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions revoked: [createGroupAccount-in-0-0]
+39773227 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions revoked: [disableGroupContributions-in-0-0]
+39772986 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions lost: [createGroupContribution-in-0-0]
+39773722 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions revoked: [contribution-name-edit-topic-0]
+39772980 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions lost: [enableGroupContributions-in-0-0]
+39773733 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions revoked: [createGroupContribution-in-0-0]
+39773733 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions revoked: [enableGroupContributions-in-0-0]
+39773722 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions revoked: [createMemberWallet-in-0-0]
+39773733 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions revoked: [callback-topic-0]
+39776520 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+39776586 [boundedElastic-18] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+39776592 [boundedElastic-18] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+39777494 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions assigned: [createGroupAccount-in-0-0]
+39777488 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions assigned: [createGroupContribution-in-0-0]
+39777493 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions assigned: [contribution-name-edit-topic-0]
+39777490 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions assigned: [callback-topic-0]
+39777491 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions assigned: [disableGroupContributions-in-0-0]
+39777490 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions assigned: [createMemberWallet-in-0-0]
+39777528 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions assigned: [enableGroupContributions-in-0-0]
+39822826 [DiscoveryClient-1] WARN  c.n.discovery.TimedSupervisorTask - task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+39822819 [DiscoveryClient-0] WARN  c.n.discovery.TimedSupervisorTask - task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+39836568 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+39896580 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+39956585 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40016604 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40052813 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+40076608 [boundedElastic-19] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+40076610 [boundedElastic-19] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+40076621 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40136630 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40196647 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40256665 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40316682 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40352818 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+40376621 [boundedElastic-21] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+40376624 [boundedElastic-21] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+40376692 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40436710 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40496724 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40556746 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40616763 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40652823 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+40676634 [boundedElastic-23] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+40676644 [boundedElastic-23] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+40676782 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40736806 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40796844 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40856860 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40916873 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+40952829 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+40976644 [boundedElastic-25] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+40976646 [boundedElastic-25] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+40976891 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+41036900 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+41096909 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+41097371 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CHAMA-PAYMENTS with eureka with status DOWN
+41097375 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1716059042895, current=DOWN, previous=UP]
+41097383 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+41097482 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+41098248 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions revoked: [createMemberWallet-in-0-0]
+41098308 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-member-wallet-group: Consumer stopped
+41098325 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@6a115451
+41099020 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+41099027 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions revoked: [createGroupContribution-in-0-0]
+41099051 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-group-contribution-group: Consumer stopped
+41099052 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@2165f881
+41099068 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+41099072 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions revoked: [createGroupAccount-in-0-0]
+41099099 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-group-account-group: Consumer stopped
+41099100 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@2921e595
+41099108 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+41099113 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions revoked: [enableGroupContributions-in-0-0]
+41099131 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - enableGroupContributions-group: Consumer stopped
+41099132 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@27a85121
+41099140 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+41099149 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions revoked: [disableGroupContributions-in-0-0]
+41099167 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - disable-group-contributions-group: Consumer stopped
+41099167 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@650e34fc
+41099174 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+41099178 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions revoked: [contribution-name-edit-topic-0]
+41099196 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - contribution-name-edit-group: Consumer stopped
+41099196 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@945866d
+41099205 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+41099210 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions revoked: [callback-topic-0]
+41099227 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - callback-topic-group: Consumer stopped
+41099228 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@790aa6d2
+41099253 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+41099414 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+41099414 [SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-payments.errorChannel' has 0 subscriber(s).
+41099415 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+41099910 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+41100025 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+41100068 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+41102236 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+41105270 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+41105304 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - deregister  status: 200
+41105322 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

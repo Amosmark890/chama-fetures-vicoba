@@ -1,8 +1,8 @@
 spring:
   profiles:
-#    active: vicoba
+#   active: vicoba
 #    active: prod
-     active: dev
+    active: dev
 
 logging:
   level:

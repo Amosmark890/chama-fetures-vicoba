@@ -1,55 +1,31 @@
-3730 [main] INFO  c.e.c.ChamaEurekaServerApplication - Starting ChamaEurekaServerApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 16532 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\Chama-Eureka-server\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
-3760 [main] INFO  c.e.c.ChamaEurekaServerApplication - No active profile set, falling back to default profiles: default
-6828 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=0ba8af23-88ac-30a0-857c-51bea35f742b
-8200 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
-8227 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-8229 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-8610 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-8612 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4623 ms
-10017 [main] INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-15789 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
-16325 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-16373 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-17566 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-17621 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application UNKNOWN with eureka with status UP
-17627 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
-17655 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
-17657 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
-17675 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
-17713 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
-17715 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
-18570 [main] INFO  c.e.c.ChamaEurekaServerApplication - Started ChamaEurekaServerApplication in 17.033 seconds (JVM running for 19.727)
-76325 [http-nio-8761-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-76326 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-76330 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-3530 [main] INFO  c.e.c.ChamaEurekaServerApplication - Starting ChamaEurekaServerApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 8332 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\Chama-Eureka-server\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
-3560 [main] INFO  c.e.c.ChamaEurekaServerApplication - No active profile set, falling back to default profiles: default
-6230 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=0ba8af23-88ac-30a0-857c-51bea35f742b
-7451 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
-7477 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-7478 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
-7849 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-7850 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4165 ms
-9177 [main] INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-14106 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
-14244 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-14296 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-15442 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-15495 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application UNKNOWN with eureka with status UP
-15503 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
-15526 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
-15528 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
-15549 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
-15558 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
-15559 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
-16254 [main] INFO  c.e.c.ChamaEurekaServerApplication - Started ChamaEurekaServerApplication in 14.86 seconds (JVM running for 17.28)
-150574 [http-nio-8761-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-150575 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-150578 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-5574819 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
-5575813 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
-5575860 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
-5575882 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
-5575885 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
-5575887 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
-5575965 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+3591 [main] INFO  c.e.c.ChamaEurekaServerApplication - Starting ChamaEurekaServerApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 7164 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\Chama-Eureka-server\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+3662 [main] INFO  c.e.c.ChamaEurekaServerApplication - No active profile set, falling back to default profiles: default
+6844 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=0ba8af23-88ac-30a0-857c-51bea35f742b
+8220 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+8247 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+8248 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+8569 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+8569 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4663 ms
+9944 [main] INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+14269 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+14405 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14447 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+15374 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15444 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application UNKNOWN with eureka with status UP
+15449 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+15477 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+15481 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+15508 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+15509 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+15512 [Thread-9] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+16118 [main] INFO  c.e.c.ChamaEurekaServerApplication - Started ChamaEurekaServerApplication in 14.928 seconds (JVM running for 17.232)
+64760 [http-nio-8761-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+64761 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+64763 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+35330343 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application UNKNOWN with eureka with status DOWN
+35331312 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+35331374 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+35331402 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+35331404 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+35331405 [SpringApplicationShutdownHook] INFO  c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+35331527 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...

@@ -4,5 +4,5 @@ server:
 
 spring:
   profiles:
-#    active: vicoba
-     active: dev
+   active: vicoba
+#     active: dev

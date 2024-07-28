@@ -1,0 +1,656 @@
+6063 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - Starting ChamaPaymentsApplication using Java 11.0.22 on DESKTOP-C76S6GF with PID 8232 (C:\Users\HP\Documents\vicoba-backend-dev\chama-reactive-backend\ChamaPayments\target\classes started by HP in C:\Users\HP\Documents\vicoba-backend-dev)
+6071 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - The following profiles are active: dev
+6358 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+6359 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+23667 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23671 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+28168 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4468 ms. Found 30 JPA repository interfaces.
+28234 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+28240 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+28387 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AccountTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28442 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AccountsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28444 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.AmounttypeRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28446 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionLoanRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28447 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28452 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionSchedulePaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28454 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionTypesRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28461 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ContributionsPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28462 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.EsbRequestLogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28463 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28465 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.GuarantorsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28466 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.InvestmentsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28467 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanPenaltyPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28468 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanPenaltyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanapplicationsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28472 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanproductsRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28473 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoanrepaymentpendingapprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28476 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoansdisbursedRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28478 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.LoansrepaymentRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28480 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.MemberTransactionStatusRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28482 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.MessagetemplatesRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28483 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.OutstandingContributionPaymentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28485 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.OverpaidContributionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28488 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.PenaltyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28490 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.ScheduleTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28499 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionTypeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28500 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionlogsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28505 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.TransactionspendingaApprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28510 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.WithdrawallogsRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28512 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.chamapayments.repository.WithdrawalspendingapprovalRepo. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+28513 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 220 ms. Found 0 Redis repository interfaces.
+31786 [restartedMain] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=5abc6003-64a2-3c3e-8650-b48365a8b2bb
+32464 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+32586 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+34379 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+34572 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+34608 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+34668 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+34820 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+35002 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+35009 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+35208 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+35215 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+35221 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+39774 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 7.7.3 by Redgate
+40448 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+52081 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+52243 [restartedMain] INFO  o.f.c.i.database.base.DatabaseType - Database: jdbc:postgresql://localhost:5432/chamadb (PostgreSQL 16.2)
+52257 [restartedMain] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: org.flywaydb.core.internal.database.postgresql.PostgreSQLDatabaseType@57156724 16.2 is newer than this version of Flyway and support has not been tested. The latest supported version of org.flywaydb.core.internal.database.postgresql.PostgreSQLDatabaseType@57156724 is 13.
+52418 [restartedMain] INFO  o.f.c.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.110s)
+52433 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+52435 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+53392 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+54238 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+55315 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+55840 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+62065 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+62091 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+77134 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+77240 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+80117 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createMemberWallet-in-0' has 1 subscriber(s).
+80123 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createGroupContribution-in-0' has 1 subscriber(s).
+80127 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.createGroupAccount-in-0' has 1 subscriber(s).
+80155 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.enableGroupContributions-in-0' has 1 subscriber(s).
+80160 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.disableGroupContributions-in-0' has 1 subscriber(s).
+80164 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.editContributionName-in-0' has 1 subscriber(s).
+80168 [restartedMain] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'chama-payments.fundsTransferCallback-in-0' has 1 subscriber(s).
+84414 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+85320 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+85321 [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-payments.errorChannel' has 1 subscriber(s).
+85322 [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+85357 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+85833 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+85863 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+86013 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+86013 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+86014 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+86020 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+86020 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+86021 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+86021 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+87322 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+87332 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+87337 [restartedMain] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+87359 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1717747546761 with initial instances count: 3
+87373 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application CHAMA-PAYMENTS with eureka with status UP
+87374 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717747546790, current=UP, previous=STARTING]
+87381 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+87384 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Creating binder: kafka
+87690 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+88453 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Caching the binder: kafka
+88487 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+92638 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+92644 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 0 subscriber(s).
+92644 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+92646 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createMemberWallet-in-0.create-member-wallet-group.errors' has 2 subscriber(s).
+92732 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@7b90e47f
+92744 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+93086 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+93086 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 0 subscriber(s).
+93087 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+93087 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupContribution-in-0.create-group-contribution-group.errors' has 2 subscriber(s).
+93112 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@41c05ec
+93116 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 1 threads
+93120 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+93362 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+93362 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 0 subscriber(s).
+93362 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+93363 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'createGroupAccount-in-0.create-group-account-group.errors' has 2 subscriber(s).
+93388 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@6963d44
+93388 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 2 threads
+93393 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+93646 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+93647 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 0 subscriber(s).
+93647 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+93647 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'enableGroupContributions-in-0.enableGroupContributions-group.errors' has 2 subscriber(s).
+93666 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@49895546
+93666 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 3 threads
+93670 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+93926 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+93926 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 0 subscriber(s).
+93926 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+93927 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'disableGroupContributions-in-0.disable-group-contributions-group.errors' has 2 subscriber(s).
+93948 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@49e3122a
+93949 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 4 threads
+93954 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+94609 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+94610 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 0 subscriber(s).
+94610 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+94610 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'contribution-name-edit-topic.contribution-name-edit-group.errors' has 2 subscriber(s).
+94634 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@12be2c64
+94635 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 5 threads
+94638 [restartedMain] INFO  o.s.c.s.binder.DefaultBinderFactory - Retrieving cached binder: kafka
+94880 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+94881 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 0 subscriber(s).
+94881 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+94882 [restartedMain] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'callback-topic.callback-topic-group.errors' has 2 subscriber(s).
+94899 [restartedMain] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - started org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@79575b73
+94901 [restartedMain] INFO  o.s.c.s.b.kafka.KafkaBinderMetrics - Try to shutdown the old scheduler with 6 threads
+95678 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8090
+95681 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+96200 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions assigned: [createMemberWallet-in-0-0]
+96360 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions assigned: [createGroupContribution-in-0-0]
+96516 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions assigned: [createGroupAccount-in-0-0]
+96832 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions assigned: [enableGroupContributions-in-0-0]
+97144 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions assigned: [disableGroupContributions-in-0-0]
+98012 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions assigned: [contribution-name-edit-topic-0]
+98118 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+98142 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+98150 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+98188 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions assigned: [callback-topic-0]
+98201 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+99106 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+100342 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+100369 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+100402 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+101160 [restartedMain] WARN  s.d.s.w.r.p.ParameterTypeReader - @ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+101454 [restartedMain] INFO  c.e.c.ChamaPaymentsApplication - Started ChamaPaymentsApplication in 98.671 seconds (JVM running for 105.095)
+101833 [boundedElastic-1] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+101967 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+102291 [boundedElastic-1] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+102340 [scheduling-1] INFO  o.s.s.a.AnnotationAsyncExecutionInterceptor - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [remindersExecutor, taskScheduler]
+162016 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+222037 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+282050 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+342093 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+386090 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+402084 [boundedElastic-3] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+402136 [boundedElastic-3] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+402185 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+462203 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+522238 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+582252 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+642272 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+686184 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+702092 [boundedElastic-5] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+702098 [boundedElastic-5] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+702298 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+762309 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+822327 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+882350 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+942368 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+986194 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1002108 [boundedElastic-7] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1002111 [boundedElastic-7] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1002382 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1062401 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1122421 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1182442 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1242460 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1286199 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1302124 [boundedElastic-9] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1302130 [boundedElastic-9] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1302484 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1362499 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1422515 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1482529 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1542551 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1586218 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1602137 [boundedElastic-11] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1602151 [boundedElastic-11] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1602560 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1662581 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1722597 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1782606 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1842613 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1886232 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1902153 [boundedElastic-13] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+1902157 [boundedElastic-13] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+1902623 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+1962642 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2022659 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2082672 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2142687 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2186235 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2202165 [boundedElastic-15] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+2202167 [boundedElastic-15] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+2202704 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2262745 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2322818 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2382837 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2442846 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2486241 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2502173 [boundedElastic-17] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+2502175 [boundedElastic-17] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+2502867 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2562883 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2622887 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2682902 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2742936 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2786245 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2802178 [boundedElastic-19] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+2802181 [boundedElastic-19] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+2802945 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2862950 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2922964 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+2982985 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3042996 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3086260 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3102183 [boundedElastic-21] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+3102189 [boundedElastic-21] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+3103018 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3163032 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3223042 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3283058 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3343074 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3386263 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3402191 [boundedElastic-23] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+3402193 [boundedElastic-23] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+3403092 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3463110 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3523125 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3583176 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3643197 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3686266 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3702214 [boundedElastic-25] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+3702216 [boundedElastic-25] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+3703215 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3763227 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3823236 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3883249 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3943265 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+3986354 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4002237 [boundedElastic-27] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+4002240 [boundedElastic-27] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+4003280 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4063294 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4123312 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4183325 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4243332 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4286371 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4302258 [boundedElastic-29] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+4302261 [boundedElastic-29] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+4303346 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4363449 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4423468 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4483491 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4543512 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4586386 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4602399 [boundedElastic-31] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+4602401 [boundedElastic-31] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+4603533 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4663550 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4723569 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4783588 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4843612 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4886387 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4902555 [boundedElastic-33] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+4902577 [boundedElastic-33] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+4903620 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+4963646 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5023659 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5083673 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5143692 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5186395 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5202583 [boundedElastic-35] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+5202585 [boundedElastic-35] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+5203706 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5263766 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5323805 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5383822 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5443831 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5486403 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5502585 [boundedElastic-37] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+5502589 [boundedElastic-37] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+5503857 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5563866 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5623887 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5683898 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5743905 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5786411 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5802592 [boundedElastic-39] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+5802594 [boundedElastic-39] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+5803918 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5863932 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5923941 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+5983964 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6043985 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6086418 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6102605 [boundedElastic-41] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+6102608 [boundedElastic-41] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+6104008 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6164022 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6224041 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6284053 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6344072 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6386425 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6402619 [boundedElastic-43] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+6402621 [boundedElastic-43] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+6404080 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6464096 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6524113 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6584124 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6644143 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6686427 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6702632 [boundedElastic-45] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+6702635 [boundedElastic-45] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+6704159 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6764178 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6824195 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6884203 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6944222 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+6986436 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7002640 [boundedElastic-47] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+7002641 [boundedElastic-47] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+7004233 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7064244 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7124323 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7184338 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7244358 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7286450 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7302648 [boundedElastic-49] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+7302654 [boundedElastic-49] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+7304377 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7364390 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7424410 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7484429 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7544454 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7586464 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7602668 [boundedElastic-51] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+7602670 [boundedElastic-51] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+7604467 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7664479 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7724502 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7784516 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7844531 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7886479 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7902680 [boundedElastic-53] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+7902684 [boundedElastic-53] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+7904548 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+7964554 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8024567 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8084583 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8144600 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8186490 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8202700 [boundedElastic-55] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+8202705 [boundedElastic-55] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+8204612 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8264627 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8324648 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8384662 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8444668 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8486493 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8502717 [boundedElastic-57] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+8502721 [boundedElastic-57] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+8504680 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8564698 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8624724 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8684739 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+8744757 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+10922407 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m35s649ms609µs100ns).
+10930521 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions lost: [callback-topic-0]
+10930530 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions revoked: [callback-topic-0]
+10930544 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions lost: [createGroupContribution-in-0-0]
+10930545 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions revoked: [createGroupContribution-in-0-0]
+10934946 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions assigned: [createGroupContribution-in-0-0]
+10935092 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions assigned: [callback-topic-0]
+10942778 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+10942783 [boundedElastic-59] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+10942804 [boundedElastic-59] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+10952135 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11002793 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11081485 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11141503 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11201521 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11242814 [boundedElastic-61] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+11242824 [boundedElastic-61] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+11252167 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11261531 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11321549 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11381559 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11441574 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11501585 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11542831 [boundedElastic-63] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+11542841 [boundedElastic-63] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+11552227 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11561591 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11621616 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11681633 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11741652 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11801673 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11842847 [boundedElastic-65] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+11842849 [boundedElastic-65] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+11852230 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11861690 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11921708 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+11981725 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12041739 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12101763 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12142860 [boundedElastic-67] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+12142864 [boundedElastic-67] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+12152244 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12161769 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12221784 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12281800 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12341873 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12401902 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12442883 [boundedElastic-69] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+12442886 [boundedElastic-69] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+12452251 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12461921 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12521940 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12581961 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12641976 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12701989 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12743032 [boundedElastic-71] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+12743053 [boundedElastic-71] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+12752252 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12762020 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12822053 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12882060 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+12942117 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13002146 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13043608 [boundedElastic-73] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+13043664 [boundedElastic-73] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+13052293 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13062162 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13122174 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13182210 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13242231 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13302246 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13343992 [boundedElastic-75] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+13344075 [boundedElastic-75] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+13352413 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13362262 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13422281 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13482311 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13542323 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13602344 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13644141 [boundedElastic-77] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+13644147 [boundedElastic-77] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+13652466 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13663383 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13723413 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13783504 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13843533 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13903553 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+13944189 [boundedElastic-79] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+13944210 [boundedElastic-79] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+13952502 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13963599 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14023617 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14083632 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14143651 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14203662 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14244204 [boundedElastic-81] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+14244217 [boundedElastic-81] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+14252561 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14263685 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14323701 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14383725 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14443731 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14503793 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14544219 [boundedElastic-83] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+14544242 [boundedElastic-83] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+14552575 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14563810 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14623831 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14684408 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14744418 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14804435 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14844231 [boundedElastic-85] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+14844233 [boundedElastic-85] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+14852589 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14864449 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14924552 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+14984569 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15044588 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15104605 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15144328 [boundedElastic-87] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+15144343 [boundedElastic-87] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+15152616 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15164618 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15224833 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15284876 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15344893 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15404905 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15444349 [boundedElastic-89] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+15444351 [boundedElastic-89] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+15452630 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15464920 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15524947 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15584970 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15645000 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15705019 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15744365 [boundedElastic-91] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+15744367 [boundedElastic-91] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+15752708 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15765040 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15825049 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15885067 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+15945074 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16005095 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16044371 [boundedElastic-93] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+16044373 [boundedElastic-93] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+16052785 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16065107 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16125144 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16185179 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16245243 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16305282 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16344439 [boundedElastic-95] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+16344465 [boundedElastic-95] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+16352799 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16365294 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16425312 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16485327 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16545348 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16605380 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16644445 [boundedElastic-97] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+16644446 [boundedElastic-97] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+16652808 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16665393 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16725412 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16785437 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16845448 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16905467 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+16944496 [boundedElastic-99] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+16944500 [boundedElastic-99] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+16952815 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16965475 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17025494 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17085518 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17145536 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17205547 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17244516 [boundedElastic-101] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+17244518 [boundedElastic-101] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+17252823 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17265553 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17325568 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17385590 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17445675 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17505737 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17544611 [boundedElastic-103] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+17544633 [boundedElastic-103] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+17552839 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17565764 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17625773 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17685800 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17745823 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17805857 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17844701 [boundedElastic-105] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+17844708 [boundedElastic-105] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+17852859 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17865876 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17925893 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+17985905 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18045979 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18106006 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18145403 [boundedElastic-107] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+18145491 [boundedElastic-107] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+18152930 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18166015 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18226024 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18286043 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18346054 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18406200 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18445423 [boundedElastic-109] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... BEGIN
+18445430 [boundedElastic-109] INFO  c.e.c.s.i.MemberTransactionStatusServiceImpl - Enabling users to transact... END
+18453030 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18466212 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18526227 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18586288 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18646344 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18706369 [scheduling-1] INFO  c.e.c.s.s.ContributionPaymentScheduler - Schedule type not found... On monthly payment scheduling.
+18713505 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CHAMA-PAYMENTS with eureka with status DOWN
+18713533 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717766172940, current=DOWN, previous=UP]
+18713560 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090: registering service...
+18713940 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - registration status: 204
+18715258 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-member-wallet-group: partitions revoked: [createMemberWallet-in-0-0]
+18715413 [KafkaConsumerDestination{consumerDestinationName='createMemberWallet-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-member-wallet-group: Consumer stopped
+18715427 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@7b90e47f
+18715824 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createMemberWallet-in-0.create-member-wallet-group.errors' has 1 subscriber(s).
+18715832 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-contribution-group: partitions revoked: [createGroupContribution-in-0-0]
+18715850 [KafkaConsumerDestination{consumerDestinationName='createGroupContribution-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-group-contribution-group: Consumer stopped
+18715850 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@41c05ec
+18715858 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createGroupContribution-in-0.create-group-contribution-group.errors' has 1 subscriber(s).
+18715864 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - create-group-account-group: partitions revoked: [createGroupAccount-in-0-0]
+18715881 [KafkaConsumerDestination{consumerDestinationName='createGroupAccount-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - create-group-account-group: Consumer stopped
+18715883 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@6963d44
+18715890 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.createGroupAccount-in-0.create-group-account-group.errors' has 1 subscriber(s).
+18715893 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - enableGroupContributions-group: partitions revoked: [enableGroupContributions-in-0-0]
+18715912 [KafkaConsumerDestination{consumerDestinationName='enableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - enableGroupContributions-group: Consumer stopped
+18715913 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@49895546
+18715922 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.enableGroupContributions-in-0.enableGroupContributions-group.errors' has 1 subscriber(s).
+18715926 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - disable-group-contributions-group: partitions revoked: [disableGroupContributions-in-0-0]
+18715943 [KafkaConsumerDestination{consumerDestinationName='disableGroupContributions-in-0', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - disable-group-contributions-group: Consumer stopped
+18715944 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@49e3122a
+18715955 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.disableGroupContributions-in-0.disable-group-contributions-group.errors' has 1 subscriber(s).
+18715962 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - contribution-name-edit-group: partitions revoked: [contribution-name-edit-topic-0]
+18716028 [KafkaConsumerDestination{consumerDestinationName='contribution-name-edit-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - contribution-name-edit-group: Consumer stopped
+18716031 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@12be2c64
+18716038 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.contribution-name-edit-topic.contribution-name-edit-group.errors' has 1 subscriber(s).
+18716043 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.c.s.b.k.KafkaMessageChannelBinder$2 - callback-topic-group: partitions revoked: [callback-topic-0]
+18716065 [KafkaConsumerDestination{consumerDestinationName='callback-topic', partitions=1, dlqName='null'}.container-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - callback-topic-group: Consumer stopped
+18716065 [SpringApplicationShutdownHook] INFO  o.s.i.k.i.KafkaMessageDrivenChannelAdapter - stopped org.springframework.integration.kafka.inbound.KafkaMessageDrivenChannelAdapter@79575b73
+18716077 [SpringApplicationShutdownHook] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'chama-payments.callback-topic.callback-topic-group.errors' has 1 subscriber(s).
+18716136 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+18716138 [SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-payments.errorChannel' has 0 subscriber(s).
+18716144 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+18716552 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18716680 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18716754 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18718887 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+18722032 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+18722204 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-PAYMENTS/host.docker.internal:chama-payments:8090 - deregister  status: 200
+18722474 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

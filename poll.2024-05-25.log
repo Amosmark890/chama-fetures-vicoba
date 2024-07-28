@@ -1,0 +1,67 @@
+79798877 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h27m44s228ms897µs500ns).
+79805496 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.NetworkException: Disconnected from node 1
+79805965 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.NetworkException: Disconnected from node 1
+79805974 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.NetworkException: Disconnected from node 1
+79805975 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.NetworkException: Disconnected from node 1
+79806280 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807272 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807273 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807274 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807286 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807287 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807288 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807289 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807290 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807291 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807291 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79807401 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808249 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808250 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808254 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808279 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808301 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808301 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808308 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808311 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808311 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79808312 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='byte[90]' to topic inMemorySwaggerResourcesProvider-out-0:
+org.apache.kafka.common.errors.TimeoutException: Expiring 22 record(s) for inMemorySwaggerResourcesProvider-out-0-0:73677817 ms has passed since batch creation
+79810040 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+79810090 [SpringApplicationShutdownHook] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'chama-polls.errorChannel' has 0 subscriber(s).
+79810097 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+79810118 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {router} as a subscriber to the 'inMemorySwaggerResourcesProvider_integrationflow.channel#0' channel
+79810129 [SpringApplicationShutdownHook] INFO  o.s.i.channel.DirectChannel - Channel 'chama-polls.inMemorySwaggerResourcesProvider_integrationflow.channel#0' has 0 subscriber(s).
+79810129 [SpringApplicationShutdownHook] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean 'inMemorySwaggerResourcesProvider_integrationflow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'
+79817216 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+79817812 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+79818410 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+79820818 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+79823879 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+79823879 [DiscoveryClient-1] WARN  c.n.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+79823921 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_CHAMA-POLLS/host.docker.internal:chama-polls:8091 - deregister  status: 200
+79823955 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

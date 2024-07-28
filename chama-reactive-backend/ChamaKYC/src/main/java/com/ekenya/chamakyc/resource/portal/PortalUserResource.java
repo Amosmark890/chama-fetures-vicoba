@@ -51,7 +51,6 @@ public class PortalUserResource {
         return chamaUserService.createPortalUser(newUser, Channel.PORTAL)
                 .map(res -> ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(res));
     }
-
     @PutMapping("/update-portal-user")
     public Mono<ResponseEntity<?>> updatePortalAdminUser(
             @RequestBody @Valid NewUser newUser) {
